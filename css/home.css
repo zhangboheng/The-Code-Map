@@ -8,6 +8,7 @@ body{
 a {
     color: #fff;
     text-decoration: none;
+	text-align:center;
 }
 a:hover {
     color: #fed03d;
@@ -137,6 +138,7 @@ a:hover {
 	border: 1px solid #fed03d;
     background-color: #fff;
     border-radius: 30px;
+	margin: 0 auto;
 }
 .solid-bar ul {
     margin:0;
@@ -156,7 +158,7 @@ a:hover {
     align-items: center;
 	text-align:center;
 	z-index:-1000;
-	background-image: url("https://github.com/zhangboheng/Javascript-Practise-Easy-Examples/blob/main/Demo/The%20Code%20Map/img/top-banner.jpg?raw=true");
+	background-image: url("https://github.com/zhangboheng/The-Code-Map/blob/main/img/top-banner.jpg?raw=true");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	border-bottom: 2px solid #fed03d; 
@@ -366,5 +368,14 @@ a:hover {
 	}
 	.web-map{
 	display: grid;
+	}
+	.web-map li{
+	margin:0 auto;
+	}
+	.web-map li i{
+	display: grid;
+	}
+	.web-map h4{
+		font-size:1.5em;
 	}
 }

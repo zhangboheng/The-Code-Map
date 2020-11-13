@@ -290,6 +290,9 @@ a {
     position: absolute;
     top: -180px;
     left: 0px;
+	display:none;
+	border:2px solid #fed03d;
+	background:url("https://github.com/zhangboheng/The-Code-Map/blob/main/img/wechatqrc.png?raw=true");
 }
 .intro_alipay {
     width: 170px;
@@ -298,15 +301,9 @@ a {
     position: absolute;
     top: -180px;
     left: 0px;
-}
-.intro_paypal {
-	background-image:url("wechatqrc.png") no-repeat;
-    width: 170px;
-    height: 170px;
-    background-color: #fff;
-    position: absolute;
-    top: -180px;
-    left: 0px;
+	display:none;
+	border:2px solid #fed03d;
+	background:url("https://github.com/zhangboheng/The-Code-Map/blob/main/img/alipayqrc.png?raw=true");
 }
 .useful-links {
     margin-top: 300px;

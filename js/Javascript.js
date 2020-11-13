@@ -213,6 +213,7 @@ $("#rectangle-menu").click(function(){
 //Mouse over the QR code show
 	$(".return-top-button li:eq(1)").mouseenter(function(){
 		$(this).css({opacity:1});
+		$(".show-code").fadeToggle(500);
 	})
 	$(".return-top-button li:eq(1)").click(function(){
 		$(this).css({opacity:1});
@@ -226,5 +227,28 @@ $("#rectangle-menu").click(function(){
 	})
 		$(".show-code li").mouseleave(function(){
 		$(this).css({opacity:0.5});
+	})
+//Buy me a cup of coffee
+	$(".show-code li:eq(0)").on({
+		"mouseenter": function(){
+			$(".intro_wechat").show();
+		},
+		"click": function(){
+			$(".intro_wechat").toggle();
+		},
+		"mouseleave": function(){
+			$(".intro_wechat").hide();
+		}
+	})
+	$(".show-code li:eq(1)").on({
+		"mouseenter": function(){
+			$(".intro_alipay").show();
+		},
+		"click": function(){
+			$(".intro_alipay").toggle();
+		},
+		"mouseleave": function(){
+			$(".intro_alipay").hide();
+		}
 	})
 })

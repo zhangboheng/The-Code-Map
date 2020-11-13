@@ -198,7 +198,7 @@ $("#retangle-menu").click(function(){
 			$(".mcode-list").css({opacity:1});
 			$(".mcode-list").animate({left:"0px"},500);
 		}else{
-			$(".mcode-list").animate({left:-$(window).width()-60},500);
+			$(".mcode-list").animate({left:-$(window).width()},500);
 		}
 	});
 //Scroll return to top button

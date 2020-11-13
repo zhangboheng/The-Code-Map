@@ -5,7 +5,6 @@ $(document).ready(function(){
 	$(".menu-top4").css({height:$(window).height()-40});
 	$(".menu-top5").css({height:$(window).height()-40});
 	$(".mcode-list").css({height:$(window).height(),left:-$(window).width()-60});
-	$(".return-top-button").hide();
 //solid-bar z-index controll
 	$(document).mousemove(function(event){var x = event.pageX;
 		if(x>=$(window).width()-$(".first-button").width()){
@@ -153,7 +152,7 @@ $(document).ready(function(){
 		}
 	})
 //retangle-menu
-var canvas = document.getElementById("retangle-menu");
+var canvas = document.getElementById("rectangle-menu");
 var ctx = canvas.getContext("2d");
 ctx.beginPath();
 ctx.moveTo(20,20);
@@ -166,7 +165,7 @@ ctx.lineWidth = 2;
 ctx.strokeStyle = "#ffffff";
 ctx.closePath();
 ctx.stroke();
-	$("#retangle-menu").click(function(){
+	$("#rectangle-menu").click(function(){
 		if(ctx.strokeStyle==="#ffffff"){
 			ctx.clearRect(0,0,60,60);
 			ctx.beginPath();
@@ -192,8 +191,8 @@ ctx.stroke();
 			ctx.stroke();
 		}
 	})
-//retangle-menu-list
-$("#retangle-menu").click(function(){
+//rectangle-menu-list
+$("#rectangle-menu").click(function(){
 		if(ctx.strokeStyle === "#fed03d"){
 			$(".mcode-list").css({opacity:1});
 			$(".mcode-list").animate({left:"0px"},500);
@@ -202,21 +201,30 @@ $("#retangle-menu").click(function(){
 		}
 	});
 //Scroll return to top button
-	$(window).scroll(function(){
-		if($(this).scrollTop()<=100){
-			$(".return-top-button").hide();
-		}else{
-			$(".return-top-button").show();
-			$(".return-top-button").css({opacity:0.5});
-		}
-	});
-	$(".return-top-button").mouseenter(function(){
+	$(".return-top-button li:eq(0)").mouseenter(function(){
 		$(this).css({opacity:1});
 	})
-	$(".return-top-button").click(function(){
+	$(".return-top-button li:eq(0)").click(function(){
 		$("html, body").animate({scrollTop:"0"},500);
 	})
-	$(".return-top-button").mouseleave(function(){
+	$(".return-top-button li:eq(0)").mouseleave(function(){
+		$(this).css({opacity:0.5});
+	})
+//Mouse over the QR code show
+	$(".return-top-button li:eq(1)").mouseenter(function(){
+		$(this).css({opacity:1});
+	})
+	$(".return-top-button li:eq(1)").click(function(){
+		$(this).css({opacity:1});
+		$(".show-code").fadeToggle(500);
+	})
+		$(".return-top-button li:eq(1)").mouseleave(function(){
+		$(this).css({opacity:0.5});
+	})
+		$(".show-code li").mouseenter(function(){
+		$(this).css({opacity:1});
+	})
+		$(".show-code li").mouseleave(function(){
 		$(this).css({opacity:0.5});
 	})
 })

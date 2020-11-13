@@ -213,11 +213,13 @@ $("#rectangle-menu").click(function(){
 //Mouse over the QR code show
 	$(".return-top-button li:eq(1)").mouseenter(function(){
 		$(this).css({opacity:1});
-		$(".show-code").fadeToggle(500);
+		if($(window).width()>1024){
+			$(".show-code").show(500);
+		}
 	})
 	$(".return-top-button li:eq(1)").click(function(){
 		$(this).css({opacity:1});
-		$(".show-code").fadeToggle(500);
+		$(".show-code").toggle(500);
 	})
 		$(".return-top-button li:eq(1)").mouseleave(function(){
 		$(this).css({opacity:0.5});
@@ -231,7 +233,9 @@ $("#rectangle-menu").click(function(){
 //Buy me a cup of coffee
 	$(".show-code li:eq(0)").on({
 		"mouseenter": function(){
-			$(".intro_wechat").show();
+			if($(window).width()>1200){
+				$(".intro_wechat").show();
+			}
 		},
 		"click": function(){
 			$(".intro_wechat").toggle();
@@ -242,7 +246,9 @@ $("#rectangle-menu").click(function(){
 	})
 	$(".show-code li:eq(1)").on({
 		"mouseenter": function(){
-			$(".intro_alipay").show();
+			if($(window).width()>1200){
+				$(".intro_alipay").show();
+			}
 		},
 		"click": function(){
 			$(".intro_alipay").toggle();

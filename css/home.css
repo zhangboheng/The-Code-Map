@@ -283,7 +283,24 @@ a {
 .show-code li{
 	margin-right: 10px;
 }
-.intro {
+.intro_wechat {
+    width: 170px;
+    height: 170px;
+    background-color: #fff;
+    position: absolute;
+    top: -180px;
+    left: 0px;
+}
+.intro_alipay {
+    width: 170px;
+    height: 170px;
+    background-color: #fff;
+    position: absolute;
+    top: -180px;
+    left: 0px;
+}
+.intro_paypal {
+	background-image:url("wechatqrc.png") no-repeat;
     width: 170px;
     height: 170px;
     background-color: #fff;

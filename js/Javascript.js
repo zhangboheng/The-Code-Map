@@ -136,17 +136,6 @@ $(document).ready(function(){
 			$(".solid-bar span:eq(0)").text(a);
 			setTimeout(changeTime,1000);
 	}
-//Top bar content
-	$(window).resize(function(){
-		if($(this).width()<=1024){
-			$(".code-list li:gt(10)").hide();
-			$(".code-list li:eq(10)").text("more");
-		}else{
-			$(".solid-bar").show();
-			$(".code-list li:gt(10)").show();
-			$(".code-list li:eq(10)").text("Go");
-		}
-	})
 //retangle-menu
 var canvas = document.getElementById("rectangle-menu");
 var ctx = canvas.getContext("2d");

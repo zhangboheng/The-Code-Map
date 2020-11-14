@@ -137,10 +137,6 @@ $(document).ready(function(){
 			$(".solid-bar span:eq(0)").text(a);
 			setTimeout(changeTime,1000);
 	}
-//Search-box click new window
-	$(".search-box button").click(function(){
-		$(window).open("https://www.google.com/search?q=$('.search-box input').text()");
-	})
 //Top bar content
 	if($(this).width()<1200){
 			$(".code-list li:gt(10)").hide();

@@ -120,9 +120,6 @@ a {
     text-align: center;
     top: 350px;
 }
-.search-box form {
-    display: inline-grid;
-}
 .search-box input{
 	width:400px;
 	height: 40px;
@@ -131,14 +128,6 @@ a {
 	border-radius:20px;
 	padding-inline-start:40px;
 	padding-inline-end:40px;
-}
-.search-box button{
-	width:50px;
-	border:none;
-	border-radius:25px;
-	cursor: pointer;
-	margin: 20px auto;
-	background-color:transparent;
 }
 .solid-bar {
     width: 100%;

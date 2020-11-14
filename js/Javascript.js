@@ -38,12 +38,11 @@ $(document).ready(function(){
 			$(".menu-top5").hide();
 			$(".menu-top1").css({marginLeft:0});
 			$(".menu-top1").slideToggle(500);
-			$(".solid-bar").toggle();
 			if($(window).width()<=1024){
-				$(".solid-bar").hide();
+				$(".solid-bar").css({display:"none"});
 				$(".msolid-bar").fadeToggle(500);
 			}else{
-				$(".msolid-bar").hide();
+				$(".solid-bar").toggle();
 			}
 			$(".search-box").fadeToggle(500);
 			$(".top-banner").toggle();
@@ -138,18 +137,12 @@ $(document).ready(function(){
 			setTimeout(changeTime,1000);
 	}
 //Top bar content
-	if($(this).width()<1200){
-			$(".code-list li:gt(10)").hide();
-			$(".code-list li:eq(10)").text("more");
-	}else{
-			$(".code-list li:gt(10)").show();
-			$(".code-list li:eq(10)").text("Go");
-	}
 	$(window).resize(function(){
-		if($(this).width()<1200){
+		if($(this).width()<=1024){
 			$(".code-list li:gt(10)").hide();
 			$(".code-list li:eq(10)").text("more");
 		}else{
+			$(".solid-bar").show();
 			$(".code-list li:gt(10)").show();
 			$(".code-list li:eq(10)").text("Go");
 		}
@@ -259,5 +252,8 @@ $("#rectangle-menu").click(function(){
 		"mouseleave": function(){
 			$(".intro_alipay").hide();
 		}
+	})
+	$(".web-map a:not(h4)").click(function(){
+		$(this).attr("target","_blank");
 	})
 })

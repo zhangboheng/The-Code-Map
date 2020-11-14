@@ -463,8 +463,9 @@ a {
     }
     .web-map li {
         margin: 0 auto;
-        line-height: 15px;
+        line-height: 10px;
         padding-left: 0px;
+		margin-bottom:10px
     }
     .web-map li i {
         display: grid;

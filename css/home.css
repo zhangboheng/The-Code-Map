@@ -208,7 +208,7 @@ a {
 	padding-bottom:200px;
 }
 .msolid-bar {
-    display: none;
+    display: opacity;
 }
 .top-banner-button {
     text-align: center;

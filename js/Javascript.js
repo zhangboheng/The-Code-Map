@@ -42,6 +42,8 @@ $(document).ready(function(){
 			if($(window).width()<=1024){
 				$(".solid-bar").hide();
 				$(".msolid-bar").fadeToggle(500);
+			}else{
+				$(".msolid-bar").hide();
 			}
 			$(".search-box").fadeToggle(500);
 			$(".top-banner").toggle();

@@ -54,11 +54,8 @@ $(document).ready(function(){
 			$(".third-button").toggle(600);
 			$(".fourth-button").toggle(700);
 			$(".fifth-button").toggle(800);
-			if($(this).text()==="↓ Pull"){
-				$(this).text("↑ Push");
-			}else{
-				$(this).text("↓ Pull");
-			}
+			var src = ($(".first-button img").attr('src') === 'img/downnarrow.gif')? 'img/upnarrow.gif' : 'img/downnarrow.gif';
+			$(".first-button img").attr('src', src);
 		}
 	})
 	$(".second-button").on({

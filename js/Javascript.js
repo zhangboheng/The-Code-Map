@@ -242,4 +242,7 @@ $("#rectangle-menu").click(function(){
 	$(".web-map a:not(h4)").click(function(){
 		$(this).attr("target","_blank");
 	})
+	$(".useful-links a").click(function(){
+		$(this).attr("target","_blank");
+	})
 })

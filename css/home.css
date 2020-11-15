@@ -10,20 +10,20 @@ a {
     text-decoration: none;
     text-align: center;
 }
+a:hover {
+    color: #fed03d;
+}
 ::-webkit-input-placeholder {
-   text-align: center;
+    text-align: center;
 }
-
 :-moz-placeholder { /* Firefox 18- */
-   text-align: center;  
+    text-align: center;
 }
-
-::-moz-placeholder {  /* Firefox 19+ */
-   text-align: center;  
+::-moz-placeholder { /* Firefox 19+ */
+    text-align: center;
 }
-
-:-ms-input-placeholder {  
-   text-align: center; 
+:-ms-input-placeholder {
+    text-align: center;
 }
 .menu-top1 {
     width: 100%;
@@ -61,7 +61,7 @@ a {
 }
 .first-button img {
     margin-top: -4px;
-	border-radius:none;
+    border-radius: none;
 }
 .second-button {
     width: calc(100%/5);
@@ -115,20 +115,20 @@ a {
     background-color: #ffee00;
     display: none;
 }
-.search-box{
-	width: 100%;
+.search-box {
+    width: 100%;
     position: absolute;
     text-align: center;
     top: 350px;
 }
-.search-box input{
-	width:400px;
-	height: 40px;
-	font-size:16px;
-	color:#474747;
-	border-radius:20px;
-	padding-inline-start:40px;
-	padding-inline-end:40px;
+.search-box input {
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    color: #474747;
+    border-radius: 20px;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
 }
 .solid-bar {
     width: 100%;
@@ -186,16 +186,16 @@ a {
     align-items: center;
     text-align: center;
     z-index: -1000;
-    background-image: url("https://github.com/zhangboheng/The-Code-Map/blob/main/img/top-banner.jpg?raw=true");
+    background-image: url("../img/top-banner.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-bottom: 2px solid #fed03d;
     border-top: 2px solid #fed03d;
 }
 .top-banner img {
-	width:300px;
-	margin:0 auto;
-	padding-bottom:200px;
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 200px;
 }
 .msolid-bar {
     display: none;
@@ -286,7 +286,7 @@ a {
     display: flex;
     align-items: center;
     cursor: pointer;
-	z-index:1001;
+    z-index: 1001;
 }
 .return-top-button ul {
     padding: 0;
@@ -304,7 +304,7 @@ a {
     align-items: center;
     text-align: center;
     border-radius: 25px;
-	opacity:0.5;
+    opacity: 0.5;
 }
 .show-code {
     height: 110px;
@@ -312,13 +312,13 @@ a {
     bottom: 50px;
     color: #fff;
     position: fixed;
-	display:none;
+    display: none;
 }
-.show-code ul{
-	display:inline-flex;
+.show-code ul {
+    display: inline-flex;
 }
-.show-code li{
-	margin-right: 10px;
+.show-code li {
+    margin-right: 10px;
 }
 .intro_wechat {
     width: 170px;
@@ -327,9 +327,9 @@ a {
     position: absolute;
     top: -180px;
     left: 0px;
-	display:none;
-	border:2px solid #fed03d;
-	background:url("https://github.com/zhangboheng/The-Code-Map/blob/main/img/wechatqrc.png?raw=true");
+    display: none;
+    border: 2px solid #fed03d;
+    background: url("../img/wechatqrc.png");
 }
 .intro_alipay {
     width: 170px;
@@ -338,9 +338,9 @@ a {
     position: absolute;
     top: -180px;
     left: 0px;
-	display:none;
-	border:2px solid #fed03d;
-	background:url("https://github.com/zhangboheng/The-Code-Map/blob/main/img/alipayqrc.png?raw=true");
+    display: none;
+    border: 2px solid #fed03d;
+    background: url("../img/alipayqrc.png");
 }
 .useful-links {
     margin-top: 300px;
@@ -351,15 +351,29 @@ a {
     background-color: #000;
     border-top: 2px solid #fed03d;
 }
+.useful-links img {
+    height: 30px;
+}
 .useful-links ul {
     margin: 0 auto;
     padding: 0;
     list-style: none;
     width: 70%;
+    display: initial;
+    vertical-align: super;
 }
 .useful-links ul > li {
     display: inline-block;
     padding-right: 20px;
+}
+.useful-links ul ul {
+    width: 100%;
+}
+.useful-links ul ul > li {
+    display: block;
+    padding: 0;
+    float: right;
+    margin-left: 40px;
 }
 /* pad css */
 @media screen and (max-width:1024px) {
@@ -375,11 +389,11 @@ a {
         top: -10px;
         left: -10px;
     }
-	.search-box input{
-		width:300px;
-		height: 40px;
-		border-radius:20px;
-	}
+    .search-box input {
+        width: 300px;
+        height: 40px;
+        border-radius: 20px;
+    }
     .mcode-list {
         width: 100%;
         position: absolute;
@@ -388,7 +402,7 @@ a {
         top: 40px;
         z-index: 1;
         padding: 0px;
-		opacity:0;
+        opacity: 0;
     }
     .mcode-list li {
         border-bottom: 1px solid #fed03d;
@@ -421,11 +435,11 @@ a {
     .msolid-bar {
         display: block;
     }
-	.search-box input{
-		width:200px;
-		height: 40px;
-		border-radius:20px;
-	}
+    .search-box input {
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+    }
     #rectangle-menu {
         position: relative;
         top: -10px;
@@ -439,7 +453,7 @@ a {
         top: 40px;
         z-index: 1;
         padding: 0px;
-		opacity:0;
+        opacity: 0;
     }
     .mcode-list li {
         border-bottom: 1px solid #fed03d;
@@ -469,9 +483,28 @@ a {
         margin: 0 auto;
         line-height: 10px;
         padding-left: 0px;
-		margin-bottom:10px
+        margin-bottom: 10px
     }
     .web-map li i {
         display: grid;
+    }
+    .useful-links {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .useful-links ul ul > li {
+        display: block;
+        padding: 0;
+        float: none;
+        margin-left: 0px;
+    }
+    .useful-links ul > li {
+        padding-right: 0px;
+        text-align: center;
+    }
+    .useful-links ul {
+        display: grid;
+        margin-top: 10px;
     }
 }

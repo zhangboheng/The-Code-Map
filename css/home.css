@@ -193,7 +193,7 @@ a:hover {
     border-top: 2px solid #fed03d;
 }
 .top-banner img {
-    width: 300px;
+    width: 280px;
     margin: 0 auto;
     padding-bottom: 200px;
 }
@@ -486,7 +486,8 @@ a:hover {
         margin-bottom: 10px
     }
     .web-map li i {
-        display: grid;
+        display: flex;
+		margin-bottom:10px;
     }
     .useful-links {
         height: auto;

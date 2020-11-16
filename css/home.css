@@ -25,6 +25,14 @@ a:hover {
 :-ms-input-placeholder {
     text-align: center;
 }
+.pull-push ul {
+	padding:0;
+}
+.pull-push li {
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
 .menu-top1 {
     width: 100%;
     display: none;

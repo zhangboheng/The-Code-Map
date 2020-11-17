@@ -31,27 +31,36 @@ a:hover {
 .menu-top1 {
     width: 100%;
     display: none;
-    background-color: #eee;
+    background-color: #000;
+	border-bottom:2px solid #fff;
+	background:url("../tool/background.png") no-repeat;
 }
 .menu-top2 {
     width: 100%;
     display: none;
-    background-color: #ff00ff;
+    background-color: #000;
+	border-bottom:2px solid #fff;
+	background:url("../tool/background.png") no-repeat;
 }
 .menu-top3 {
     width: 100%;
     display: none;
-    background-color: #ff0000;
+    background-color: #000;
+	border-bottom:2px solid #fff;
+	background:url("../tool/background.png") no-repeat;
 }
 .menu-top4 {
     width: 100%;
     display: none;
-    background-color: #00ff00;
+    background-color: #000;
+	border-bottom:2px solid #fff;
+	background:url("../tool/background.png") no-repeat;
 }
 .menu-top5 {
     width: 100%;
     display: none;
-    background-color: #000000;
+	border-bottom:2px solid #fff;
+    background-color: transparent;
 }
 .ajax-page-num{
 	margin:0 auto;
@@ -69,21 +78,19 @@ a:hover {
     width: calc(90vw / 4);
 	height:calc(100vh / 7);
     list-style-type: none;
-    display: inline-block;
     color: #000;
     background-color: #fed03d;
     padding: 5px 0px;
     margin: 0 5px;
+	display: inline-grid;
+    align-items: center;
 }
 .menu-top5 li i {
-    display: block;
+    display: inline-grid;
     align-items: center;
-    text-align: left;
-    text-indent: 10px;
+    text-align: center;
 }
 .menu-top5 ul li i img {
-    margin-top: 3px;
-	margin-right:10px;
     border-radius: 25px;
     border: 2px solid #fff;
     vertical-align: middle;
@@ -216,6 +223,15 @@ a:hover {
     padding-left: 0.5em;
     font-size: 0.8em;
 }
+#menutop5act {
+    width: 100%;
+    height: 600px;
+    padding: 0px;
+    margin: 0;
+    z-index: -99999999;
+    position: absolute;
+    top: 45px;
+}
 .top-banner {
     width: 100%;
     height: 600px;
@@ -224,7 +240,6 @@ a:hover {
     align-items: center;
     text-align: center;
     z-index: -1000;
-    background-image: url("../img/top-banner.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-bottom: 2px solid #fed03d;
@@ -491,9 +506,6 @@ a:hover {
     }
     .menu-top5 ul li i img {
         margin: 0 auto;
-    }
-    .menu-top5 ul li p {
-        display: none;
     }
     .solid-bar {
         display: none;

@@ -247,7 +247,6 @@ a:hover {
     width: 280px;
     margin: 0 auto;
     padding-bottom: 200px;
-	z-index: -1;
 }
 .msolid-bar {
     display: none;

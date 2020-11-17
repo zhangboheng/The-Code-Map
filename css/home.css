@@ -239,7 +239,6 @@ a:hover {
     display: flex;
     align-items: center;
     text-align: center;
-    z-index: -1;
     border-bottom: 2px solid #fed03d;
     border-top: 2px solid #fed03d;
 	background-color: transparent;
@@ -451,6 +450,10 @@ a:hover {
         top: -10px;
         left: -10px;
     }
+	#menutop5act {
+    z-index: -99999999;
+    position: absolute;
+}
     .search-box input {
         width: 300px;
         height: 40px;
@@ -519,6 +522,10 @@ a:hover {
         height: 40px;
         border-radius: 20px;
     }
+	#menutop5act {
+    z-index: -99999999;
+    position: absolute;
+}
     #rectangle-menu {
         position: relative;
         top: -10px;

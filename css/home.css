@@ -72,7 +72,7 @@ a:hover {
     display: inline-block;
     color: #000;
     background-color: #fed03d;
-    padding: 10px 0px;
+    padding: 5px 0px;
     margin: 0 5px;
 }
 .menu-top5 li i {
@@ -475,6 +475,11 @@ a:hover {
 }
 /* mobile css */
 @media screen and (max-width:640px) {
+	.menu-top5 ul {
+    padding: 40px 0 0;
+    display: block;
+    text-align: center;
+}
     .menu-top5 li {
         width: calc(75% / 4);
 		height:auto;

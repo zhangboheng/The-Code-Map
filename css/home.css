@@ -422,7 +422,7 @@ a:hover {
 }
 	.menu-top5 li {
         width: calc(85% / 4);
-		height:calc(100vh / 7);
+		height:calc(100vh / 8);
     }
     .solid-bar {
         display: none;
@@ -477,7 +477,7 @@ a:hover {
 @media screen and (max-width:640px) {
     .menu-top5 li {
         width: calc(75% / 4);
-		height:auto;
+		height:calc(100vh / 9);;
     }
     .menu-top5 li i {
         display: grid;

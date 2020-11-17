@@ -229,7 +229,7 @@ a:hover {
     padding: 0px;
     margin: 0;
     z-index: -99999999;
-    position: absolute;
+    position: fixed;
     top: 45px;
 }
 .top-banner {
@@ -240,9 +240,10 @@ a:hover {
     align-items: center;
     text-align: center;
     z-index: -1000;
+	opacity:0.5;
     border-bottom: 2px solid #fed03d;
     border-top: 2px solid #fed03d;
-	background-color: transparent;
+	background-color: #000;
 }
 .top-banner img {
     width: 280px;

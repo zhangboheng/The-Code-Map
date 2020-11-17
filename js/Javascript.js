@@ -4,6 +4,7 @@ $(document).ready(function(){
 	$(".menu-top3").css({height:$(window).height()-40});
 	$(".menu-top4").css({height:$(window).height()-40});
 	$(".menu-top5").css({height:$(window).height()-40});
+	$(".menu-top5").load("tool/page1.html")
 	$(".mcode-list").css({height:$(window).height(),left:-$(window).width()-60});
 //solid-bar z-index controll
 	$(document).mousemove(function(event){var x = event.pageX;

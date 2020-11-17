@@ -13,6 +13,9 @@ a {
 a:hover {
     color: #fed03d;
 }
+.pull-push a{
+	color:#000;
+}
 ::-webkit-input-placeholder {
     text-align: center;
 }
@@ -24,14 +27,6 @@ a:hover {
 }
 :-ms-input-placeholder {
     text-align: center;
-}
-.pull-push ul {
-	padding:0;
-}
-.pull-push li {
-	list-style-type: none;
-	padding:0;
-	margin:0;
 }
 .menu-top1 {
     width: 100%;
@@ -58,11 +53,42 @@ a:hover {
     display: none;
     background-color: #000000;
 }
+.ajax-page-num{
+	width:10%;
+	margin:0 auto;
+}
+.menu-top5 ul {
+    padding: 38px 0 0;
+    display: block;
+    text-align: center;
+}
+.menu-top5 li {
+    width: calc((90%)/4);
+    list-style-type: none;
+    display: inline-block;
+    color: #000;
+    background-color: #fed03d;
+    padding: 10px 0px;
+    margin: 0 5px;
+}
+.menu-top5 li i {
+    display: block;
+    align-items: center;
+    text-align: left;
+    text-indent: 10px;
+}
+.menu-top5 ul li i img {
+    margin-top: 3px;
+	margin-right:10px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    vertical-align: middle;
+}
 .first-button {
     width: calc(100%/5);
     height: 40px;
     float: right;
-    opacity: 0.5;
+    opacity: 0.8;
     cursor: pointer;
     border-radius: 0 0 100px 100px;
     background-color: #fed03d;
@@ -75,7 +101,7 @@ a:hover {
     width: calc(100%/5);
     height: 40px;
     color: #000;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     float: right;
     opacity: 0.5;
@@ -88,7 +114,7 @@ a:hover {
     width: calc(100%/5);
     height: 40px;
     color: #000;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     float: right;
     opacity: 0.5;
@@ -101,7 +127,7 @@ a:hover {
     width: calc(100%/5);
     height: 40px;
     color: #000;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     float: right;
     opacity: 0.5;
@@ -114,7 +140,7 @@ a:hover {
     width: calc(100%/5);
     height: 40px;
     color: #000;
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: bold;
     float: right;
     opacity: 0.5;
@@ -436,6 +462,20 @@ a:hover {
 }
 /* mobile css */
 @media screen and (max-width:640px) {
+    .menu-top5 li {
+        width: calc((75%)/4);
+    }
+    .menu-top5 li i {
+        display: grid;
+        align-items: center;
+        text-align: center;
+    }
+    .menu-top5 ul li i img {
+        margin: 0 auto;
+    }
+    .menu-top5 ul li p {
+        display: none;
+    }
     .solid-bar {
         display: none;
         background-color: #fff;
@@ -495,7 +535,7 @@ a:hover {
     }
     .web-map li i {
         display: flex;
-		margin-bottom:10px;
+        margin-bottom: 10px;
     }
     .useful-links {
         height: auto;

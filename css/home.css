@@ -231,7 +231,6 @@ a:hover {
     z-index: -99999999;
     position: absolute;
     top: 45px;
-	opacity:0.5;
 }
 .top-banner {
     width: 100%;
@@ -243,6 +242,7 @@ a:hover {
     z-index: -1000;
     border-bottom: 2px solid #fed03d;
     border-top: 2px solid #fed03d;
+	background-color: transparent;
 }
 .top-banner img {
     width: 280px;

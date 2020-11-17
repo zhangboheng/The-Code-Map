@@ -231,6 +231,7 @@ a:hover {
     z-index: -99999999;
     position: absolute;
     top: 45px;
+	opacity:0.5;
 }
 .top-banner {
     width: 100%;

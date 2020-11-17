@@ -66,8 +66,8 @@ a:hover {
     text-align: center;
 }
 .menu-top5 li {
-    width: calc(90% / 4);
-	height:calc(100vh / 9);
+    width: calc(90vw / 4);
+	height:calc(100vh / 7);
     list-style-type: none;
     display: inline-block;
     color: #000;
@@ -415,6 +415,15 @@ a:hover {
 }
 /* pad css */
 @media screen and (max-width:1024px) {
+	.menu-top5 ul {
+    padding: 50px 0 0;
+    display: block;
+    text-align: center;
+}
+	.menu-top5 li {
+        width: calc(85% / 4);
+		height:calc(100vh / 7);
+    }
     .solid-bar {
         display: none;
         background-color: #fff;

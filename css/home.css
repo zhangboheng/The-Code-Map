@@ -477,7 +477,7 @@ a:hover {
 @media screen and (max-width:640px) {
     .menu-top5 li {
         width: calc(75% / 4);
-		height:calc(100vh / 9);;
+		height:auto;
     }
     .menu-top5 li i {
         display: grid;

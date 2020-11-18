@@ -98,8 +98,12 @@ a:hover {
     border-radius: 0 0 100px 100px;
     background-color: #fed03d;
 }
-.first-button img {
+.first-button img{
     margin-top: -4px;
+    border-radius: none;
+}
+.fifth-button img {
+	margin-top: -4px;
     border-radius: none;
 }
 .second-button {

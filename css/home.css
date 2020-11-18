@@ -30,6 +30,7 @@ a:hover {
 }
 .menu-top1 {
     width: 100%;
+	opacity:0.5;
     display: none;
 	border-bottom:2px solid #fff;
     background-color: transparent;
@@ -38,7 +39,7 @@ a:hover {
     width: 100%;
     display: none;
 	border-bottom:2px solid #fff;
-    background-color: transparent;
+    background:url("../img/menu-top2bg.gif") repeat;
 }
 .menu-top2 ul {
     text-align: center;
@@ -55,21 +56,24 @@ a:hover {
 	align-items: center;
 	justify-content: center;
 	border:1px solid #000;
+	opacity:0.75;
 }
 .menu-top2 li i {
     display: block;
     text-align: center;
 }
 .menu-top2 ul li i img {
-    border-radius: 25px;
+    border-radius: 64px;
     border: 2px solid #fff;
     vertical-align: middle;
+	background-color:#fff;
+	width:50%;
 }
 .menu-top3 {
     width: 100%;
     display: none;
 	border-bottom:2px solid #fff;
-    background-color: transparent;
+    background:url("../img/menu-top3bg.gif") repeat;
 }
 .menu-top3 ul {
     text-align: center;
@@ -86,21 +90,24 @@ a:hover {
 	align-items: center;
 	justify-content: center;
 	border:1px solid #000;
+	opacity:0.75;
 }
 .menu-top3 li i {
     display: block;
     text-align: center;
 }
 .menu-top3 ul li i img {
-    border-radius: 25px;
+    border-radius: 64px;
     border: 2px solid #fff;
     vertical-align: middle;
+	background-color:#fff;
+	width:50%;
 }
 .menu-top4 {
     width: 100%;
     display: none;
 	border-bottom:2px solid #fff;
-    background-color: transparent;
+    background:url("../img/menu-top4bg.gif") repeat;
 }
 .menu-top4 ul {
     text-align: center;
@@ -117,21 +124,24 @@ a:hover {
 	align-items: center;
 	justify-content: center;
 	border:1px solid #000;
+	opacity:0.75;
 }
 .menu-top4 li i {
     display: block;
     text-align: center;
 }
 .menu-top4 ul li i img {
-    border-radius: 25px;
+    border-radius: 64px;
     border: 2px solid #fff;
     vertical-align: middle;
+	background-color:#fff;
+	width:50%;
 }
 .menu-top5 {
     width: 100%;
     display: none;
 	border-bottom:2px solid #fff;
-    background-color: transparent;
+    background:url("../img/menu-top5bg.gif") repeat;
 }
 .ajax-page-num{
 	margin:0 auto;
@@ -151,15 +161,18 @@ a:hover {
 	align-items: center;
 	justify-content: center;
 	border:1px solid #000;
+	opacity:0.75;
 }
 .menu-top5 li i {
     display: block;
     text-align: center;
 }
 .menu-top5 ul li i img {
-    border-radius: 25px;
+    border-radius: 64px;
     border: 2px solid #fff;
     vertical-align: middle;
+	background-color:#fff;
+	width:50%;
 }
 .first-button {
     width: calc(100% / 5);

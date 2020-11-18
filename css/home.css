@@ -31,30 +31,101 @@ a:hover {
 .menu-top1 {
     width: 100%;
     display: none;
-    background-color: #000;
 	border-bottom:2px solid #fff;
-	background:url("../tool/background.png") no-repeat;
+    background-color: transparent;
 }
 .menu-top2 {
     width: 100%;
     display: none;
-    background-color: #000;
 	border-bottom:2px solid #fff;
-	background:url("../tool/background.png") no-repeat;
+    background-color: transparent;
+}
+.menu-top2 ul {
+    text-align: center;
+	margin:0;
+	padding:0;
+	display:inline-flex;
+	align-items: center;
+}
+.menu-top2 li {
+    list-style-type: none;
+    color: #000;
+    background-color: #fed03d;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border:1px solid #000;
+}
+.menu-top2 li i {
+    display: block;
+    text-align: center;
+}
+.menu-top2 ul li i img {
+    border-radius: 25px;
+    border: 2px solid #fff;
+    vertical-align: middle;
 }
 .menu-top3 {
     width: 100%;
     display: none;
-    background-color: #000;
 	border-bottom:2px solid #fff;
-	background:url("../tool/background.png") no-repeat;
+    background-color: transparent;
+}
+.menu-top3 ul {
+    text-align: center;
+	margin:0;
+	padding:0;
+	display:inline-flex;
+	align-items: center;
+}
+.menu-top3 li {
+    list-style-type: none;
+    color: #000;
+    background-color: #fed03d;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border:1px solid #000;
+}
+.menu-top3 li i {
+    display: block;
+    text-align: center;
+}
+.menu-top3 ul li i img {
+    border-radius: 25px;
+    border: 2px solid #fff;
+    vertical-align: middle;
 }
 .menu-top4 {
     width: 100%;
     display: none;
-    background-color: #000;
 	border-bottom:2px solid #fff;
-	background:url("../tool/background.png") no-repeat;
+    background-color: transparent;
+}
+.menu-top4 ul {
+    text-align: center;
+	margin:0;
+	padding:0;
+	display:inline-flex;
+	align-items: center;
+}
+.menu-top4 li {
+    list-style-type: none;
+    color: #000;
+    background-color: #fed03d;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border:1px solid #000;
+}
+.menu-top4 li i {
+    display: block;
+    text-align: center;
+}
+.menu-top4 ul li i img {
+    border-radius: 25px;
+    border: 2px solid #fff;
+    vertical-align: middle;
 }
 .menu-top5 {
     width: 100%;
@@ -79,6 +150,7 @@ a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	border:1px solid #000;
 }
 .menu-top5 li i {
     display: block;
@@ -100,6 +172,18 @@ a:hover {
 }
 .first-button img{
     margin-top: -4px;
+    border-radius: none;
+}
+.second-button img {
+	margin-top: -4px;
+    border-radius: none;
+}
+.third-button img {
+	margin-top: -4px;
+    border-radius: none;
+}
+.fourth-button img {
+	margin-top: -4px;
     border-radius: none;
 }
 .fifth-button img {

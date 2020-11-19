@@ -14,6 +14,7 @@ $(document).ready(function () {
     $(".menu-top5").css({
         height: $(window).height() - 42
     });
+	$(".menu-top1").load("info/intro.html");
     $(".menu-top2").load("article/page1.html");
     $(".menu-top3").load("book/page1.html");
     $(".menu-top4").load("design/page1.html");

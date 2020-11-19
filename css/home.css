@@ -30,10 +30,18 @@ a:hover {
 }
 .menu-top1 {
     width: 100%;
-	opacity:0.5;
+	opacity:0.75;
     display: none;
 	border-bottom:2px solid #fff;
     background-color: transparent;
+}
+.myinfo {
+    width: calc(90vw);
+	height: 80%;
+	top:10%;
+	margin: 0 auto;
+	position: relative;
+    background-color: #fed03d;
 }
 .menu-top2 {
     width: 100%;
@@ -595,9 +603,10 @@ a:hover {
     }
     .web-map li {
         margin: 0 auto;
-        line-height: 10px;
+        line-height: 20px;
         padding-left: 0px;
-        margin-bottom: 10px
+        margin-bottom: 10px;
+		text-align: justify;
     }
     .web-map li i {
         display: flex;

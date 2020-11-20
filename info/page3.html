@@ -1,0 +1,42 @@
+<ul>
+  <li><a href="#"><i><img src="img/pre.png" alt="pre-logo"><br />Previous<br />Page</i></a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+</ul>
+<ul>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+</ul>
+<ul>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+</ul>
+<ul>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+</ul>
+<ul>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="https://www.luckydesigner.space"><i><img src="img/javascripting.png" alt="javascripting-logo"><br />G</i> </a></li>
+  <li><a href="#"><i><img src="img/next.png" alt="next-logo"><br />Next<br />Page</i></a></li>
+</ul>
+<script>
+	$(document).ready(function(){
+		$(".menu-top1 li").css({
+			height:($(window).height()-52)/5,
+			width:(window.outerWidth - 8)/4
+		});
+		$(".menu-top1 li:first").click(function(){
+			$(".menu-top1 ul").remove();
+			$(".menu-top1").load("info/page2.html")
+		})
+	})
+</script>

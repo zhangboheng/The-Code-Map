@@ -60,7 +60,7 @@ a:hover {
     border: 2px solid #fff;
     vertical-align: middle;
 	background-color:#fff;
-	width:50%;
+	width:100%;
 }
 .menu-top2 {
     width: 100%;
@@ -94,7 +94,7 @@ a:hover {
     border: 2px solid #fff;
     vertical-align: middle;
 	background-color:#fff;
-	width:50%;
+	width:100%;
 }
 .menu-top3 {
     width: 100%;
@@ -128,7 +128,7 @@ a:hover {
     border: 2px solid #fff;
     vertical-align: middle;
 	background-color:#fff;
-	width:50%;
+	width:100%;
 }
 .menu-top4 {
     width: 100%;
@@ -162,7 +162,7 @@ a:hover {
     border: 2px solid #fff;
     vertical-align: middle;
 	background-color:#fff;
-	width:50%;
+	width:100%;
 }
 .menu-top5 {
     width: 100%;
@@ -199,7 +199,7 @@ a:hover {
     border: 2px solid #fff;
     vertical-align: middle;
 	background-color:#fff;
-	width:50%;
+	width:100%;
 }
 .first-button {
     width: calc(100% / 5);

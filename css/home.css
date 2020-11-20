@@ -30,18 +30,37 @@ a:hover {
 }
 .menu-top1 {
     width: 100%;
-	opacity:0.75;
     display: none;
 	border-bottom:2px solid #fff;
-    background-color: transparent;
+    background:url("../img/menu-top1bg.gif") repeat;
 }
-.myinfo {
-    width: calc(90vw);
-	height: 80%;
-	top:10%;
-	margin: 0 auto;
-	position: relative;
+.menu-top1 ul {
+    text-align: center;
+	margin:0;
+	padding:0;
+	display:inline-flex;
+	align-items: center;
+}
+.menu-top1 li {
+    list-style-type: none;
+    color: #000;
     background-color: #fed03d;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border:1px solid #000;
+	opacity:0.75;
+}
+.menu-top1 li i {
+    display: block;
+    text-align: center;
+}
+.menu-top1 ul li i img {
+    border-radius: 64px;
+    border: 2px solid #fff;
+    vertical-align: middle;
+	background-color:#fff;
+	width:50%;
 }
 .menu-top2 {
     width: 100%;
@@ -265,6 +284,7 @@ a:hover {
 }
 .search-box {
     width: 100%;
+	z-index: 2;
     position: absolute;
     text-align: center;
     top: 350px;
@@ -534,7 +554,7 @@ a:hover {
         display: block;
         flex: auto;
         top: 40px;
-        z-index: 1;
+        z-index: 2;
         padding: 0px;
         opacity: 0;
     }
@@ -579,7 +599,7 @@ a:hover {
         display: block;
         flex: auto;
         top: 40px;
-        z-index: 1;
+        z-index: 2;
         padding: 0px;
         opacity: 0;
     }

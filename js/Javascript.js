@@ -14,7 +14,7 @@ $(document).ready(function () {
     $(".menu-top5").css({
         height: $(window).height() - 42
     });
-	$(".menu-top1").load("info/page1.html");
+    $(".menu-top1").load("info/page1.html");
     $(".menu-top2").load("article/page1.html");
     $(".menu-top3").load("book/page1.html");
     $(".menu-top4").load("design/page1.html");
@@ -22,6 +22,23 @@ $(document).ready(function () {
     $(".mcode-list").css({
         height: $(window).height(),
         left: -$(window).width() - 60
+    });
+    $(window).resize(function () {
+        $(".menu-top5 li").css({
+            width: (window.outerWidth - 8) / 4
+        });
+        $(".menu-top4 li").css({
+            width: (window.outerWidth - 8) / 4
+        });
+        $(".menu-top3 li").css({
+            width: (window.outerWidth - 8) / 4
+        });
+        $(".menu-top2 li").css({
+            width: (window.outerWidth - 8) / 4
+        });
+        $(".menu-top1 li").css({
+            width: (window.outerWidth - 8) / 4
+        });
     });
     //solid-bar z-index controll
     $(document).mousemove(function (event) {
@@ -89,7 +106,7 @@ $(document).ready(function () {
             $(".search-box").fadeToggle(500);
             $(".top-banner").toggle();
             $(".top-banner-button").toggle();
-			$("#menutop5act").toggle();
+            $("#menutop5act").toggle();
             $(".middle-list").toggle();
             $(".useful-links").toggle();
             $(".return-top-button").toggle(400);
@@ -228,7 +245,7 @@ $(document).ready(function () {
             $(".menu-top5").show();
         }
     })
-	//left-top time change
+    //left-top time change
     changeTime();
 
     function changeTime() {

@@ -89,6 +89,7 @@ a:hover {
 .menu-top2 li i {
     display: block;
     text-align: center;
+    word-break: break-all;
 }
 .menu-top2 ul li i img {
     border-radius: 64px;
@@ -123,13 +124,14 @@ a:hover {
 .menu-top3 li i {
     display: block;
     text-align: center;
+    word-break: break-all;
 }
 .menu-top3 ul li i img {
     border-radius: 64px;
     border: 2px solid #fff;
     vertical-align: middle;
     background-color: #fff;
-    width: 75%;
+    width: 75;
 }
 .menu-top4 {
     width: 100%;
@@ -157,13 +159,14 @@ a:hover {
 .menu-top4 li i {
     display: block;
     text-align: center;
+    word-break: break-all;
 }
 .menu-top4 ul li i img {
     border-radius: 64px;
     border: 2px solid #fff;
     vertical-align: middle;
     background-color: #fff;
-    width: 75%;
+    width: 75;
 }
 .menu-top5 {
     width: 100%;
@@ -194,13 +197,14 @@ a:hover {
 .menu-top5 li i {
     display: block;
     text-align: center;
+    word-break: break-all;
 }
 .menu-top5 ul li i img {
     border-radius: 64px;
     border: 2px solid #fff;
     vertical-align: middle;
     background-color: #fff;
-    width: 75%;
+    width: 75;
 }
 .first-button {
     width: calc(100% / 5);
@@ -536,6 +540,11 @@ a:hover {
         display: none;
         background-color: #fff;
     }
+	.pull-push i {
+		font-size: 12px;
+		padding: 0px;
+    	margin: 0px;
+	}
     .menu-top1 ul li i img {
         width: 65%;
     }
@@ -599,6 +608,11 @@ a:hover {
         display: none;
         background-color: #fff;
     }
+	.pull-push i {
+		font-size: 10px;
+		padding: 0px;
+    	margin: 0px;
+	}
     .menu-top1 ul li i img {
         width: 50%;
     }

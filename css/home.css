@@ -503,9 +503,11 @@ a:hover {
     margin-top: 300px;
     height: 40px;
     color: #fed03d;
-    display: flex;
+	display:-ms-grid;
+    display: grid;
     position: relative;
-    top: 800px;
+    width: 100%;
+    top: calc(100vh);
     align-items: center;
     background-color: #000;
     border-top: 2px solid #fed03d;

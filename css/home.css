@@ -502,39 +502,19 @@ a:hover {
 .useful-links {
     margin-top: 300px;
     height: 40px;
-    color: #fed03d;
-	display:-ms-grid;
-    display: grid;
+    color: #fff;
+    display: block;
     position: relative;
     width: 100%;
     top: calc(100vh);
+	text-align: center;
     align-items: center;
     background-color: #000;
     border-top: 2px solid #fed03d;
 }
-.useful-links img {
-    height: 30px;
-}
-.useful-links ul {
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-    width: 70%;
-    display: initial;
-    vertical-align: super;
-}
-.useful-links ul > li {
-    display: inline-block;
-    padding-right: 20px;
-}
-.useful-links ul ul {
-    width: 100%;
-}
-.useful-links ul ul > li {
-    display: block;
-    padding: 0;
-    float: right;
-    margin-left: 40px;
+.useful-links p {
+    vertical-align: middle;
+    margin-top: 10px;
 }
 /* pad css */
 @media screen and (max-width:1024px) {
@@ -686,20 +666,6 @@ a:hover {
         height: auto;
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-    .useful-links ul ul > li {
-        display: block;
-        padding: 0;
-        float: none;
-        margin-left: 0px;
-    }
-    .useful-links ul > li {
-        padding-right: 0px;
-        text-align: center;
-    }
-    .useful-links ul {
-        display: grid;
-        margin-top: 10px;
     }
     .menu-top1 li i {
         padding: 8px;

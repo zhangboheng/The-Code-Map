@@ -5,6 +5,9 @@ body {
     color: #fed03d;
     background-color: #000;
 }
+hr {
+	border:2px dashed #fed03d;
+}
 a {
     color: #fff;
     text-decoration: none;
@@ -500,13 +503,13 @@ a:hover {
     background: url("../img/alipayqrc.png");
 }
 .useful-links {
-    margin-top: 300px;
     height: 40px;
     color: #fff;
     display: block;
     position: relative;
     width: 100%;
     top: calc(100vh);
+	margin-top:150px;
 	text-align: center;
     align-items: center;
     background-color: #000;

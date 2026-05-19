@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Code Map - 开发者资源导航，收录各类编程学习网站、工具和资源">
-  <meta name="keywords" content="编程,开发,资源导航,学习,工具">
+  <meta name="description" content="The Code Map - Developer Resource Navigation, a curated collection of programming learning sites, tools and resources">
+  <meta name="keywords" content="programming,development,resource navigation,learning,tools,coding,developer">
   <meta name="author" content="zhangboheng">
   <meta name="theme-color" content="#6366f1">
   
-  <title>The Code Map 🔗 开发者资源导航</title>
+  <title>The Code Map 🔗 Developer Resource Navigation</title>
   
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
@@ -63,7 +63,10 @@
         </div>
         <div class="header-actions">
           <div class="search-box-header">
-            <input type="text" id="searchInput" placeholder="🔍 Search resources...">
+            <input type="text" id="searchInput" placeholder="🔍 Search resources..." autocomplete="off">
+            <div class="search-suggestions" id="searchSuggestions">
+              <!-- Search suggestions will be rendered here -->
+            </div>
           </div>
           <div class="language-switcher" id="languageSwitcher">
             <button class="lang-dropdown-btn" id="langDropdownBtn">
@@ -101,6 +104,10 @@
           <button class="theme-toggle" id="themeToggle">
             <span id="themeIcon">🌙</span>
             <span id="themeText">Dark Mode</span>
+          </button>
+          <button class="data-source-btn" id="dataSourceBtn" data-i18n-title="dataSourceSettings">
+            <span class="status-dot local" id="dataSourceStatus"></span>
+            <span data-i18n="dataSource">Data Source</span>
           </button>
         </div>
       </header>
@@ -149,6 +156,95 @@
     </div>
   </div>
   
+  <!-- Data Source Settings Modal -->
+  <div class="data-source-overlay" id="dataSourceOverlay">
+    <div class="data-source-modal">
+      <div class="data-source-header">
+        <h3 data-i18n="dataSourceSettings">Data Source Settings</h3>
+        <button class="data-source-close" id="dataSourceClose">×</button>
+      </div>
+      <div class="data-source-body">
+        <div class="sync-message" id="syncMessage"></div>
+        
+        <div class="source-options">
+          <label class="source-option active" data-source="local">
+            <input type="radio" name="dataSource" value="local" checked>
+            <div class="source-option-icon">📁</div>
+            <div class="source-option-content">
+              <div class="source-option-title" data-i18n="localData">Local Data</div>
+              <div class="source-option-desc" data-i18n="localDataDesc">Use local JSON file, fast and stable</div>
+            </div>
+          </label>
+          <label class="source-option" data-source="github">
+            <input type="radio" name="dataSource" value="github">
+            <div class="source-option-icon">🐙</div>
+            <div class="source-option-content">
+              <div class="source-option-title" data-i18n="githubDataSource">GitHub Data Source</div>
+              <div class="source-option-desc" data-i18n="githubDataSourceDesc">Sync data from GitHub repository</div>
+            </div>
+          </label>
+        </div>
+        
+        <div class="github-config" id="githubConfig">
+          <div class="github-config-title" data-i18n="githubConfig">GitHub Configuration</div>
+          <div class="github-config-method">
+            <button class="method-btn active" data-method="raw">Raw URL</button>
+            <button class="method-btn" data-method="api">API</button>
+            <button class="method-btn" data-method="gist">Gist</button>
+          </div>
+          <div class="config-input" id="rawUrlConfig">
+            <label data-i18n="rawFileUrl">Raw File URL</label>
+            <input type="url" id="githubRawUrl" placeholder="https://raw.githubusercontent.com/user/repo/main/data/links.json">
+          </div>
+          <div class="config-input" id="apiConfig" style="display:none;">
+            <label data-i18n="repoOwner">Repository Owner</label>
+            <input type="text" id="githubOwner" placeholder="username">
+          </div>
+          <div class="config-input" id="apiConfig2" style="display:none;">
+            <label data-i18n="repoName">Repository Name</label>
+            <input type="text" id="githubRepo" placeholder="repository-name">
+          </div>
+          <div class="config-input" id="gistConfig" style="display:none;">
+            <label data-i18n="gistId">Gist ID</label>
+            <input type="text" id="githubGistId" placeholder="abc123...">
+          </div>
+          <div class="config-input">
+            <label data-i18n="githubToken">GitHub Token (optional)</label>
+            <input type="password" id="githubTokenInput" data-i18n-placeholder="githubTokenPlaceholder" placeholder="ghp_xxxx to increase API limits">
+          </div>
+        </div>
+        
+        <div class="status-section">
+          <div class="status-title" data-i18n="statusInfo">Status Information</div>
+          <div class="status-grid">
+            <div class="status-item">
+              <span class="status-dot valid" id="cacheStatusDot"></span>
+              <span data-i18n="cacheStatus">Cache Status</span>
+            </div>
+            <div class="status-item">
+              <span class="status-dot" id="backupStatusDot"></span>
+              <span data-i18n="offlineBackup">Offline Backup</span>
+            </div>
+          </div>
+          <div class="rate-limit-info" id="rateLimitInfo" style="display:none;">
+            <span data-i18n="apiLimit">API Limit</span>
+            <div class="rate-limit-bar">
+              <div class="rate-limit-bar-fill" id="rateLimitBar" style="width: 100%"></div>
+            </div>
+            <span id="rateLimitText">5000/5000</span>
+          </div>
+        </div>
+        
+        <div class="data-source-actions">
+          <button class="btn btn-secondary" id="clearCacheBtn" data-i18n="clearCache">Clear Cache</button>
+          <button class="btn btn-primary" id="syncDataBtn">
+            <span id="syncBtnText" data-i18n="syncData">Sync Data</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <!-- Export/Import Modal -->
   <div class="modal-overlay" id="exportImportOverlay">
     <div class="modal modal-sm" id="exportImportModal">
@@ -167,7 +263,16 @@
     </div>
   </div>
   
+  <!-- Module Scripts (must be loaded in order) -->
+  <script src="js/modules/state.js"></script>
+  <script src="js/modules/i18n.js"></script>
+  <script src="js/modules/search.js"></script>
+  <script src="js/modules/render.js"></script>
+  <script src="js/modules/dataLoader.js"></script>
+  <script src="js/modules/dataSourceUI.js"></script>
+  <!-- Fallback Data (loaded synchronously for initial render) -->
   <script src="js/data.js"></script>
+  <!-- Main App -->
   <script src="js/app.js"></script>
 </body>
 </html>

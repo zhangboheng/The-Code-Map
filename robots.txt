@@ -1,0 +1,11 @@
+# Robots.txt for The Code Map
+# https://zhangboheng.github.io/The-Code-Map/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://zhangboheng.github.io/The-Code-Map/sitemap.xml
+
+# Crawl delay (optional, for polite crawling)
+Crawl-delay: 1

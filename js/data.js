@@ -1,0 +1,726 @@
+/**
+ * The Code Map - Links Data
+ * Optimized Categories (方案 A: 精简分类)
+ */
+
+const LINKS_DATA = {
+  // ============================================
+  // AI 人工智能
+  // ============================================
+  ai: {
+    name: 'AI',
+    icon: '🤖',
+    subcategories: {
+      chat: {
+        name: 'Chat',
+        icon: '💬',
+        items: [
+          // 🇺🇸 美国
+          { name: 'ChatGPT', url: 'https://chat.openai.com/', icon: '💬', title: 'ChatGPT by OpenAI (美国)' },
+          { name: 'Claude', url: 'https://claude.ai/', icon: '🧠', title: 'Claude by Anthropic (美国)' },
+          { name: 'Grok', url: 'https://grok.x.ai/', icon: '⚡', title: 'Grok by xAI (美国)' },
+          { name: 'Gemini', url: 'https://gemini.google.com/', icon: '✨', title: 'Gemini by Google (美国)' },
+          { name: 'Copilot', url: 'https://copilot.microsoft.com/', icon: '🚀', title: 'Microsoft Copilot (美国)' },
+          { name: 'Perplexity', url: 'https://www.perplexity.ai/', icon: '🔍', title: 'Perplexity AI Search (美国)' },
+          { name: 'Poe', url: 'https://poe.com/', icon: '🤖', title: 'Poe AI Chat (美国)' },
+          { name: 'Character.AI', url: 'https://character.ai/', icon: '🎭', title: 'Character.AI (美国)' },
+          { name: 'Pi', url: 'https://pi.ai/', icon: '🥧', title: 'Pi AI (美国)' },
+          { name: 'Phind', url: 'https://www.phind.com/', icon: '🔎', title: 'Phind AI Search (美国)' },
+          { name: 'You.com', url: 'https://you.com/', icon: '🎯', title: 'You.com AI (美国)' },
+          // 🇪🇺 欧洲
+          { name: 'Mistral', url: 'https://chat.mistral.ai/', icon: '🌀', title: 'Mistral AI (法国)' },
+          { name: 'Le Chat', url: 'https://lechat.mistral.ai/', icon: '💬', title: 'Le Chat by Mistral (法国)' },
+          { name: 'DeepMind', url: 'https://deepmind.google/', icon: '🧬', title: 'DeepMind (英国)' },
+          { name: 'HuggingChat', url: 'https://huggingface.co/chat/', icon: '🤗', title: 'HuggingChat (法国)' },
+          // 🇯🇵 日本
+          { name: 'ELYZA', url: 'https://elyza.ai/', icon: '🌸', title: 'ELYZA AI (日本)' },
+          { name: 'Rinna', url: 'https://rinna.co.jp/', icon: '🎌', title: 'Rinna AI (日本)' },
+          { name: 'Japanese GPT', url: 'https://gpt.jp/', icon: '🇯🇵', title: 'Japanese GPT (日本)' },
+          // 🇹🇼 台湾
+          { name: 'TAIDE', url: 'https://taide.tw/', icon: '🇹🇼', title: 'TAIDE 台湾可信任AI' },
+          { name: 'Taiwan LLM', url: 'https://taiwan-llm.com/', icon: '🏝️', title: 'Taiwan LLM (台湾)' },
+          // 🇨🇳 中国
+          { name: 'Kimi', url: 'https://kimi.moonshot.cn/', icon: '🌙', title: 'Kimi 月之暗面 (中国)' },
+          { name: '豆包', url: 'https://www.doubao.com/', icon: '🫘', title: '豆包 字节跳动 (中国)' },
+          { name: '通义千问', url: 'https://tongyi.aliyun.com/', icon: '🔮', title: '通义千问 阿里 (中国)' },
+          { name: '文心一言', url: 'https://yiyan.baidu.com/', icon: '🎨', title: '文心一言 百度 (中国)' },
+          { name: '讯飞星火', url: 'https://xinghuo.xfyun.cn/', icon: '⭐', title: '讯飞星火 (中国)' },
+          { name: '智谱清言', url: 'https://chatglm.cn/', icon: '💎', title: '智谱清言 (中国)' },
+          { name: '百川智能', url: 'https://www.baichuan-ai.com/', icon: '🌊', title: '百川智能 (中国)' },
+          { name: '腾讯混元', url: 'https://hunyuan.tencent.com/', icon: '🌀', title: '腾讯混元 (中国)' },
+          { name: 'MiniMax', url: 'https://www.minimaxi.com/', icon: '🔷', title: 'MiniMax (中国)' },
+          { name: 'DeepSeek', url: 'https://chat.deepseek.com/', icon: '🔍', title: 'DeepSeek (中国)' }
+        ]
+      },
+      image: {
+        name: 'Image',
+        icon: '🎨',
+        items: [
+          { name: 'Midjourney', url: 'https://www.midjourney.com/', icon: '🎨', title: 'Midjourney AI Art' },
+          { name: 'DALL·E', url: 'https://openai.com/dall-e-3', icon: '🖼️', title: 'DALL·E 3 by OpenAI' },
+          { name: 'Stable Diffusion', url: 'https://stability.ai/', icon: '🌟', title: 'Stable Diffusion' },
+          { name: 'Flux', url: 'https://www.flux1.ai/', icon: '⚡', title: 'Flux AI Image' },
+          { name: 'Leonardo.ai', url: 'https://leonardo.ai/', icon: '🎭', title: 'Leonardo.ai' },
+          { name: 'Ideogram', url: 'https://ideogram.ai/', icon: '💡', title: 'Ideogram AI' },
+          { name: 'Adobe Firefly', url: 'https://www.adobe.com/products/firefly.html', icon: '🔥', title: 'Adobe Firefly' },
+          { name: 'Bing Image', url: 'https://www.bing.com/images/create', icon: '🖼️', title: 'Bing Image Creator' },
+          { name: 'Canva', url: 'https://www.canva.com/', icon: '📐', title: 'Canva AI Design' },
+          { name: 'Playground', url: 'https://playground.com/', icon: '🎪', title: 'Playground AI' }
+        ]
+      },
+      video: {
+        name: 'Video',
+        icon: '🎬',
+        items: [
+          { name: 'Sora', url: 'https://openai.com/sora', icon: '🎬', title: 'Sora by OpenAI' },
+          { name: 'Runway', url: 'https://runwayml.com/', icon: '🎥', title: 'Runway Gen-2' },
+          { name: 'Pika', url: 'https://pika.art/', icon: '⚡', title: 'Pika Labs' },
+          { name: 'Luma AI', url: 'https://www.luma.ai/', icon: '🌟', title: 'Luma AI' },
+          { name: 'HeyGen', url: 'https://www.heygen.com/', icon: '📹', title: 'HeyGen AI Video' },
+          { name: 'Synthesia', url: 'https://www.synthesia.io/', icon: '🎞️', title: 'Synthesia AI' },
+          { name: 'D-ID', url: 'https://www.d-id.com/', icon: '👤', title: 'D-ID AI Video' },
+          { name: 'Kaiber', url: 'https://kaiber.ai/', icon: '🎥', title: 'Kaiber AI' },
+          { name: 'Invideo', url: 'https://www.invideo.io/', icon: '🎬', title: 'Invideo AI' },
+          { name: 'Pictory', url: 'https://pictory.ai/', icon: '🎞️', title: 'Pictory AI' }
+        ]
+      },
+      audio: {
+        name: 'Audio',
+        icon: '🎵',
+        items: [
+          { name: 'Suno', url: 'https://suno.ai/', icon: '🎵', title: 'Suno AI Music' },
+          { name: 'Udio', url: 'https://www.udio.com/', icon: '🎶', title: 'Udio Music' },
+          { name: 'ElevenLabs', url: 'https://elevenlabs.io/', icon: '🎙️', title: 'ElevenLabs Voice AI' },
+          { name: 'AIVA', url: 'https://www.aiva.ai/', icon: '🎼', title: 'AIVA AI Music' },
+          { name: 'Mubert', url: 'https://www.mubert.com/', icon: '🎹', title: 'Mubert AI Music' },
+          { name: 'Murf', url: 'https://www.murf.ai/', icon: '🔊', title: 'Murf AI Voice' },
+          { name: 'Speechify', url: 'https://speechify.com/', icon: '🗣️', title: 'Speechify' },
+          { name: 'Whisper', url: 'https://openai.com/index/whisper/', icon: '📝', title: 'OpenAI Whisper' }
+        ]
+      },
+      coding: {
+        name: 'Coding',
+        icon: '👨‍💻',
+        items: [
+          { name: 'Cursor', url: 'https://cursor.sh/', icon: '🖱️', title: 'Cursor AI Code Editor' },
+          { name: 'GitHub Copilot', url: 'https://github.com/features/copilot', icon: '👨‍💻', title: 'GitHub Copilot' },
+          { name: 'Codeium', url: 'https://codeium.com/', icon: '⚡', title: 'Codeium Free AI Code Completion' },
+          { name: 'Cody', url: 'https://sourcegraph.com/cody', icon: '🧩', title: 'Sourcegraph Cody' },
+          { name: 'Aider', url: 'https://aider.chat/', icon: '🤝', title: 'Aider AI Pair Programming' },
+          { name: 'Tabnine', url: 'https://www.tabnine.com/', icon: '🤖', title: 'Tabnine AI Assistant' },
+          { name: 'CodeWhisperer', url: 'https://aws.amazon.com/codewhisperer/', icon: '📦', title: 'Amazon CodeWhisperer' },
+          { name: 'JetBrains AI', url: 'https://www.jetbrains.com/ai/', icon: '💡', title: 'JetBrains AI' },
+          { name: 'Continue', url: 'https://continue.dev/', icon: '▶️', title: 'Continue.dev' },
+          { name: 'Replit', url: 'https://replit.com/', icon: '💻', title: 'Replit AI' }
+        ]
+      },
+      platform: {
+        name: 'Platform',
+        icon: '🔑',
+        items: [
+          { name: 'OpenAI API', url: 'https://platform.openai.com/', icon: '🔑', title: 'OpenAI API' },
+          { name: 'Anthropic', url: 'https://www.anthropic.com/', icon: '🅰️', title: 'Anthropic API' },
+          { name: 'Google AI', url: 'https://ai.google.dev/', icon: '🔷', title: 'Google AI Studio' },
+          { name: 'Hugging Face', url: 'https://huggingface.co/', icon: '🤗', title: 'Hugging Face' },
+          { name: 'Replicate', url: 'https://replicate.com/', icon: '🔄', title: 'Replicate AI Platform' },
+          { name: 'Ollama', url: 'https://ollama.ai/', icon: '🦙', title: 'Ollama Local LLM' },
+          { name: 'LangChain', url: 'https://www.langchain.com/', icon: '🔗', title: 'LangChain Framework' },
+          { name: 'Together AI', url: 'https://together.ai/', icon: '🤝', title: 'Together AI' },
+          { name: 'Modal', url: 'https://modal.com/', icon: '🔲', title: 'Modal' },
+          { name: 'Baseten', url: 'https://www.baseten.co/', icon: '🏗️', title: 'Baseten' }
+        ]
+      },
+      gateway: {
+        name: 'Gateway',
+        icon: '🚪',
+        items: [
+          { name: 'OpenRouter', url: 'https://openrouter.ai/', icon: '🚪', title: 'OpenRouter AI 模型网关' },
+          { name: 'Groq', url: 'https://groq.com/', icon: '⚡', title: 'Groq 快速推理' },
+          { name: 'Cerebras', url: 'https://cerebras.ai/', icon: '🧠', title: 'Cerebras AI 推理' },
+          { name: 'Fireworks AI', url: 'https://fireworks.ai/', icon: '🎆', title: 'Fireworks AI 推理平台' },
+          { name: 'DeepInfra', url: 'https://deepinfra.com/', icon: '🔧', title: 'DeepInfra 模型托管' },
+          { name: 'Novita AI', url: 'https://novita.ai/', icon: '💎', title: 'Novita AI API 服务' },
+          { name: 'SiliconFlow', url: 'https://siliconflow.cn/', icon: '🌊', title: 'SiliconFlow 硅基流动' },
+          { name: 'Moonshot', url: 'https://moonshot.cn/', icon: '🌙', title: 'Moonshot API' },
+          { name: 'Zhipu AI', url: 'https://open.bigmodel.cn/', icon: '💎', title: '智谱 AI 开放平台' },
+          { name: 'ByteDance Ark', url: 'https://www.volcengine.com/product/ark', icon: '🌋', title: '火山引擎方舟' },
+          { name: 'Baidu AI', url: 'https://cloud.baidu.com/product/wenxinworkshop.html', icon: '☁️', title: '百度千帆大模型' },
+          { name: 'Aliyun Bailian', url: 'https://bailian.console.aliyun.com/', icon: '☁️', title: '阿里云百炼' }
+        ]
+      },
+      agent: {
+        name: 'Agent',
+        icon: '🤖',
+        items: [
+          { name: 'OpenClaw', url: 'https://openclaw.ai/', icon: '🦞', title: 'OpenClaw AI Agent' },
+          { name: 'AutoGPT', url: 'https://github.com/Significant-Gravitas/AutoGPT', icon: '🤖', title: 'AutoGPT 自主 AI Agent' },
+          { name: 'BabyAGI', url: 'https://github.com/yoheinakajima/babyagi', icon: '👶', title: 'BabyAGI 任务驱动 Agent' },
+          { name: 'CrewAI', url: 'https://www.crewai.com/', icon: '👥', title: 'CrewAI 多 Agent 协作框架' },
+          { name: 'AutoGen', url: 'https://microsoft.github.io/autogen/', icon: '🔄', title: '微软 AutoGen 多 Agent 框架' },
+          { name: 'LangGraph', url: 'https://langchain-ai.github.io/langgraph/', icon: '📊', title: 'LangGraph 状态机 Agent' },
+          { name: 'GPT Researcher', url: 'https://gptr.dev/', icon: '🔍', title: 'GPT Researcher AI 研究助手' },
+          { name: 'AgentGPT', url: 'https://agentgpt.reworkd.ai/', icon: '🎯', title: 'AgentGPT 浏览器自主 Agent' },
+          { name: 'OpenAI Assistants', url: 'https://platform.openai.com/docs/assistants', icon: '🤝', title: 'OpenAI Assistants API' },
+          { name: 'Claude Projects', url: 'https://claude.ai/projects', icon: '📁', title: 'Claude 项目助手' },
+          { name: 'Semantic Kernel', url: 'https://learn.microsoft.com/en-us/semantic-kernel/', icon: '🧠', title: '微软语义内核' },
+          { name: 'LlamaIndex', url: 'https://www.llamaindex.ai/', icon: '🦙', title: 'LlamaIndex 数据 Agent 框架' },
+          { name: 'Haystack', url: 'https://haystack.deepset.ai/', icon: '🌾', title: 'Haystack NLP Agent 框架' },
+          { name: 'SuperAGI', url: 'https://superagi.com/', icon: '⚡', title: 'SuperAGI 开源 Agent 平台' },
+          { name: 'Phidata', url: 'https://phidata.com/', icon: '🧩', title: 'Phidata Agent 构建框架' },
+          { name: 'Agentverse', url: 'https://agentverse.ai/', icon: '🌐', title: 'Agentverse Agent 市场' },
+          { name: 'TaskWeaver', url: 'https://microsoft.github.io/TaskWeaver/', icon: '📋', title: '微软 TaskWeaver' },
+          { name: 'OpenAI Swarm', url: 'https://github.com/openai/swarm', icon: '🐝', title: 'OpenAI Swarm 多 Agent 框架' },
+          { name: 'Open Interpreter', url: 'https://openinterpreter.com/', icon: '💻', title: 'Open Interpreter 代码执行 Agent' },
+          { name: 'Composio', url: 'https://composio.dev/', icon: '🔧', title: 'Composio Agent 工具集成' },
+          { name: 'Dify', url: 'https://dify.ai/', icon: '🎨', title: 'Dify AI 应用开发平台' },
+          { name: 'Flowise', url: 'https://flowiseai.com/', icon: '📊', title: 'Flowise 可视化 Agent 构建' },
+          { name: 'LangFlow', url: 'https://langflow.org/', icon: '🌊', title: 'LangFlow 可视化 LangChain' }
+        ]
+      }
+    }
+  },
+
+  // ============================================
+  // Frontend 前端
+  // ============================================
+  frontend: {
+    name: 'Frontend',
+    icon: '🎨',
+    subcategories: {
+      react: {
+        name: 'React',
+        icon: '⚛️',
+        items: [
+          { name: 'React', url: 'https://reactjs.org/', icon: '⚛️', title: 'React' },
+          { name: 'Next.js', url: 'https://nextjs.org/', icon: '▲', title: 'Next.js' },
+          { name: 'Remix', url: 'https://remix.run/', icon: '💿', title: 'Remix' },
+          { name: 'Gatsby', url: 'https://www.gatsbyjs.com/', icon: '💜', title: 'Gatsby' },
+          { name: 'React Router', url: 'https://reactrouter.com/', icon: '🛤️', title: 'React Router' },
+          { name: 'Redux', url: 'https://redux.js.org/', icon: '🔄', title: 'Redux' },
+          { name: 'Zustand', url: 'https://zustand-demo.pmnd.rs/', icon: '🐻', title: 'Zustand' }
+        ]
+      },
+      vue: {
+        name: 'Vue',
+        icon: '💚',
+        items: [
+          { name: 'Vue.js', url: 'https://vuejs.org/', icon: '💚', title: 'Vue.js' },
+          { name: 'Nuxt.js', url: 'https://nuxt.com/', icon: '💚', title: 'Nuxt.js' },
+          { name: 'Vue Router', url: 'https://router.vuejs.org/', icon: '🛤️', title: 'Vue Router' },
+          { name: 'Pinia', url: 'https://pinia.vuejs.org/', icon: '🍍', title: 'Pinia' },
+          { name: 'Vuetify', url: 'https://vuetifyjs.com/', icon: '🎨', title: 'Vuetify' },
+          { name: 'Element Plus', url: 'https://element-plus.org/', icon: '🔷', title: 'Element Plus' }
+        ]
+      },
+      angular: {
+        name: 'Angular',
+        icon: '🅰️',
+        items: [
+          { name: 'Angular', url: 'https://angular.io/', icon: '🅰️', title: 'Angular' },
+          { name: 'Angular Material', url: 'https://material.angular.io/', icon: '🎨', title: 'Angular Material' },
+          { name: 'NgRx', url: 'https://ngrx.io/', icon: '🔄', title: 'NgRx' },
+          { name: 'Nx', url: 'https://nx.dev/', icon: '🔷', title: 'Nx Monorepo' }
+        ]
+      },
+      'css-frameworks': {
+        name: 'CSS',
+        icon: '🎨',
+        items: [
+          { name: 'Tailwind CSS', url: 'https://tailwindcss.com/', icon: '🌬️', title: 'Tailwind CSS' },
+          { name: 'Bootstrap', url: 'https://getbootstrap.com/', icon: '🔷', title: 'Bootstrap' },
+          { name: 'Sass', url: 'https://sass-lang.com/', icon: '🎨', title: 'Sass' },
+          { name: 'Less', url: 'https://lesscss.org/', icon: '🎨', title: 'Less CSS' },
+          { name: 'PostCSS', url: 'https://postcss.org/', icon: '⚙️', title: 'PostCSS' },
+          { name: 'Animate.css', url: 'https://animate.style/', icon: '✨', title: 'Animate.css' }
+        ]
+      },
+      javascript: {
+        name: 'JavaScript',
+        icon: '📜',
+        items: [
+          { name: 'TypeScript', url: 'https://www.typescriptlang.org/', icon: '🔷', title: 'TypeScript' },
+          { name: 'Node.js', url: 'https://nodejs.org/', icon: '🟢', title: 'Node.js' },
+          { name: 'Bun', url: 'https://bun.sh/', icon: '🥟', title: 'Bun Runtime' },
+          { name: 'Deno', url: 'https://deno.land/', icon: '🦕', title: 'Deno Runtime' },
+          { name: 'Vite', url: 'https://vitejs.dev/', icon: '⚡', title: 'Vite Build Tool' },
+          { name: 'Webpack', url: 'https://webpack.js.org/', icon: '📦', title: 'Webpack' },
+          { name: 'esbuild', url: 'https://esbuild.github.io/', icon: '🏗️', title: 'esbuild' },
+          { name: 'D3.js', url: 'https://d3js.org/', icon: '📊', title: 'D3.js' }
+        ]
+      },
+      others: {
+        name: 'Others',
+        icon: '🌟',
+        items: [
+          { name: 'Svelte', url: 'https://svelte.dev/', icon: '🔥', title: 'Svelte' },
+          { name: 'Solid.js', url: 'https://solidjs.com/', icon: '💎', title: 'Solid.js' },
+          { name: 'Astro', url: 'https://astro.build/', icon: '🚀', title: 'Astro' },
+          { name: 'Qwik', url: 'https://qwik.builder.io/', icon: '⚡', title: 'Qwik' },
+          { name: 'jQuery', url: 'https://jquery.com/', icon: '📚', title: 'jQuery' }
+        ]
+      }
+    }
+  },
+
+  // ============================================
+  // Backend 后端
+  // ============================================
+  backend: {
+    name: 'Backend',
+    icon: '⚙️',
+    subcategories: {
+      python: {
+        name: 'Python',
+        icon: '🐍',
+        items: [
+          { name: 'Python', url: 'https://www.python.org/', icon: '🐍', title: 'Python Official' },
+          { name: 'Django', url: 'https://www.djangoproject.com/', icon: '🎸', title: 'Django' },
+          { name: 'FastAPI', url: 'https://fastapi.tiangolo.com/', icon: '⚡', title: 'FastAPI' },
+          { name: 'Flask', url: 'https://flask.palletsprojects.com/', icon: '🍶', title: 'Flask' },
+          { name: 'PyTorch', url: 'https://pytorch.org/', icon: '🔥', title: 'PyTorch' },
+          { name: 'TensorFlow', url: 'https://www.tensorflow.org/', icon: '🧠', title: 'TensorFlow' },
+          { name: 'NumPy', url: 'https://www.numpy.org/', icon: '📊', title: 'NumPy' },
+          { name: 'Pandas', url: 'https://pandas.pydata.org/', icon: '🐼', title: 'Pandas' }
+        ]
+      },
+      java: {
+        name: 'Java',
+        icon: '☕',
+        items: [
+          { name: 'Java', url: 'https://www.java.com/', icon: '☕', title: 'Java Official' },
+          { name: 'Spring', url: 'https://spring.io/', icon: '🍃', title: 'Spring Framework' },
+          { name: 'Spring Boot', url: 'https://spring.io/projects/spring-boot', icon: '🥾', title: 'Spring Boot' },
+          { name: 'Quarkus', url: 'https://quarkus.io/', icon: '⚡', title: 'Quarkus' },
+          { name: 'Maven', url: 'https://maven.apache.org/', icon: '🏗️', title: 'Maven' },
+          { name: 'Gradle', url: 'https://gradle.org/', icon: '🦙', title: 'Gradle' }
+        ]
+      },
+      go: {
+        name: 'Go',
+        icon: '🔵',
+        items: [
+          { name: 'Go', url: 'https://golang.org/', icon: '🔵', title: 'Go Official' },
+          { name: 'Gin', url: 'https://gin-gonic.com/', icon: '🥃', title: 'Gin Web Framework' },
+          { name: 'Echo', url: 'https://echo.labstack.com/', icon: '🔊', title: 'Echo Framework' },
+          { name: 'Fiber', url: 'https://gofiber.io/', icon: '⚡', title: 'Fiber Framework' },
+          { name: 'GORM', url: 'https://gorm.io/', icon: '🗃️', title: 'GORM ORM' }
+        ]
+      },
+      rust: {
+        name: 'Rust',
+        icon: '🦀',
+        items: [
+          { name: 'Rust', url: 'https://www.rust-lang.org/', icon: '🦀', title: 'Rust Official' },
+          { name: 'Tokio', url: 'https://tokio.rs/', icon: '⚡', title: 'Tokio Async Runtime' },
+          { name: 'Actix', url: 'https://actix.rs/', icon: '🎭', title: 'Actix Web Framework' },
+          { name: 'Serde', url: 'https://serde.rs/', icon: '📋', title: 'Serde Serialization' }
+        ]
+      },
+      php: {
+        name: 'PHP',
+        icon: '🐘',
+        items: [
+          { name: 'PHP', url: 'https://www.php.net/', icon: '🐘', title: 'PHP Official' },
+          { name: 'Laravel', url: 'https://laravel.com/', icon: '🔴', title: 'Laravel' },
+          { name: 'Symfony', url: 'https://symfony.com/', icon: '🔷', title: 'Symfony' },
+          { name: 'Composer', url: 'https://getcomposer.org/', icon: '🎵', title: 'Composer' },
+          { name: 'WordPress', url: 'https://wordpress.org/', icon: '📝', title: 'WordPress' }
+        ]
+      },
+      'c-family': {
+        name: 'C/C++/C#',
+        icon: '⚙️',
+        items: [
+          { name: 'CppReference', url: 'https://en.cppreference.com/', icon: '📖', title: 'C++ Reference' },
+          { name: '.NET', url: 'https://dotnet.microsoft.com/', icon: '🔷', title: '.NET' },
+          { name: 'Boost', url: 'https://www.boost.org/', icon: '🚀', title: 'Boost C++ Libraries' },
+          { name: 'Qt', url: 'https://www.qt.io/', icon: '🔷', title: 'Qt Framework' },
+          { name: 'Unity', url: 'https://unity.com/', icon: '🎮', title: 'Unity Game Engine' }
+        ]
+      },
+      ruby: {
+        name: 'Ruby',
+        icon: '💎',
+        items: [
+          { name: 'Ruby', url: 'https://www.ruby-lang.org/', icon: '💎', title: 'Ruby Official' },
+          { name: 'Rails', url: 'https://rubyonrails.org/', icon: '🛤️', title: 'Ruby on Rails' },
+          { name: 'Sinatra', url: 'https://sinatrarb.com/', icon: '🎵', title: 'Sinatra' }
+        ]
+      },
+      swift: {
+        name: 'Swift',
+        icon: '🍎',
+        items: [
+          { name: 'Swift', url: 'https://swift.org/', icon: '🍎', title: 'Swift Official' },
+          { name: 'SwiftUI', url: 'https://developer.apple.com/xcode/swiftui/', icon: '📱', title: 'SwiftUI' },
+          { name: 'Vapor', url: 'https://vapor.codes/', icon: '💨', title: 'Vapor' }
+        ]
+      }
+    }
+  },
+
+  // ============================================
+  // Database 数据库
+  // ============================================
+  database: {
+    name: 'Database',
+    icon: '🗄️',
+    subcategories: {
+      sql: {
+        name: 'SQL',
+        icon: '🐬',
+        items: [
+          { name: 'PostgreSQL', url: 'https://www.postgresql.org/', icon: '🐘', title: 'PostgreSQL' },
+          { name: 'MySQL', url: 'https://www.mysql.com/', icon: '🐬', title: 'MySQL' },
+          { name: 'MariaDB', url: 'https://mariadb.org/', icon: '🔷', title: 'MariaDB' },
+          { name: 'SQLite', url: 'https://www.sqlite.org/', icon: '📦', title: 'SQLite' },
+          { name: 'Oracle', url: 'https://www.oracle.com/', icon: '🔴', title: 'Oracle' }
+        ]
+      },
+      nosql: {
+        name: 'NoSQL',
+        icon: '🍃',
+        items: [
+          { name: 'MongoDB', url: 'https://www.mongodb.com/', icon: '🍃', title: 'MongoDB' },
+          { name: 'Redis', url: 'https://redis.io/', icon: '🔴', title: 'Redis' },
+          { name: 'Elasticsearch', url: 'https://www.elastic.co/', icon: '🔍', title: 'Elasticsearch' },
+          { name: 'Cassandra', url: 'https://cassandra.apache.org/', icon: '👁️', title: 'Cassandra' }
+        ]
+      },
+      orm: {
+        name: 'ORM',
+        icon: '🔗',
+        items: [
+          { name: 'Prisma', url: 'https://www.prisma.io/', icon: '🔷', title: 'Prisma ORM' },
+          { name: 'TypeORM', url: 'https://typeorm.io/', icon: '🗄️', title: 'TypeORM' },
+          { name: 'GORM', url: 'https://gorm.io/', icon: '🗃️', title: 'GORM ORM' },
+          { name: 'SQLAlchemy', url: 'https://www.sqlalchemy.org/', icon: '🐍', title: 'SQLAlchemy' }
+        ]
+      }
+    }
+  },
+
+  // ============================================
+  // DevOps 运维
+  // ============================================
+  devops: {
+    name: 'DevOps',
+    icon: '🔧',
+    subcategories: {
+      docker: {
+        name: 'Docker & K8s',
+        icon: '🐳',
+        items: [
+          { name: 'Docker', url: 'https://www.docker.com/', icon: '🐳', title: 'Docker' },
+          { name: 'Kubernetes', url: 'https://kubernetes.io/', icon: '☸️', title: 'Kubernetes' },
+          { name: 'Docker Hub', url: 'https://hub.docker.com/', icon: '📦', title: 'Docker Hub' },
+          { name: 'Podman', url: 'https://podman.io/', icon: '🦭', title: 'Podman' },
+          { name: 'Helm', url: 'https://helm.sh/', icon: '⛵', title: 'Helm' }
+        ]
+      },
+      cicd: {
+        name: 'CI/CD',
+        icon: '🔄',
+        items: [
+          { name: 'GitHub Actions', url: 'https://github.com/features/actions', icon: '⚡', title: 'GitHub Actions' },
+          { name: 'Jenkins', url: 'https://www.jenkins.io/', icon: '🔧', title: 'Jenkins CI/CD' },
+          { name: 'CircleCI', url: 'https://circleci.com/', icon: '🔄', title: 'CircleCI' },
+          { name: 'GitLab CI', url: 'https://docs.gitlab.com/ee/ci/', icon: '🦊', title: 'GitLab CI' },
+          { name: 'Travis CI', url: 'https://www.travis-ci.com/', icon: '🔶', title: 'Travis CI' }
+        ]
+      },
+      deploy: {
+        name: 'Deploy',
+        icon: '🚀',
+        items: [
+          { name: 'Vercel', url: 'https://vercel.com/', icon: '▲', title: 'Vercel' },
+          { name: 'Netlify', url: 'https://www.netlify.com/', icon: '🌐', title: 'Netlify' },
+          { name: 'Railway', url: 'https://railway.app/', icon: '🚂', title: 'Railway' },
+          { name: 'Render', url: 'https://render.com/', icon: '🎨', title: 'Render' },
+          { name: 'Fly.io', url: 'https://fly.io/', icon: '🪰', title: 'Fly.io' },
+          { name: 'Heroku', url: 'https://www.heroku.com/', icon: '🚀', title: 'Heroku' },
+          { name: 'DigitalOcean', url: 'https://www.digitalocean.com/', icon: '🌊', title: 'DigitalOcean' },
+          { name: 'Firebase', url: 'https://firebase.google.com/', icon: '🔥', title: 'Firebase' }
+        ]
+      },
+      tools: {
+        name: 'Tools',
+        icon: '🛠️',
+        items: [
+          { name: 'Terraform', url: 'https://www.terraform.io/', icon: '🏗️', title: 'Terraform' },
+          { name: 'Ansible', url: 'https://www.ansible.com/', icon: '🤖', title: 'Ansible' },
+          { name: 'Nginx', url: 'https://www.nginx.com/', icon: '🌐', title: 'Nginx' },
+          { name: 'Prometheus', url: 'https://prometheus.io/', icon: '🔥', title: 'Prometheus' },
+          { name: 'Grafana', url: 'https://grafana.com/', icon: '📊', title: 'Grafana' }
+        ]
+      }
+    }
+  },
+
+  // ============================================
+  // Learn 学习
+  // ============================================
+  learn: {
+    name: 'Learn',
+    icon: '📚',
+    subcategories: {
+      books: {
+        name: 'Books',
+        icon: '📖',
+        items: [
+          { name: 'Archive.org', url: 'https://archive.org/', icon: '📚', title: '互联网档案馆' },
+          { name: 'Freecomputerbooks', url: 'https://www.freecomputerbooks.com/', icon: '💻', title: '计算机书籍下载' },
+          { name: 'Ebookee', url: 'https://ebookee.com/', icon: '📖', title: '电子书搜索引擎' },
+          { name: 'Gutenberg', url: 'https://www.gutenberg.org/', icon: '📜', title: '古腾堡计划' },
+          { name: 'Getfreeebooks', url: 'https://www.getfreeebooks.com/', icon: '📖', title: '免费电子书下载' },
+          { name: 'Openlibrary', url: 'https://openlibrary.org/', icon: '🏛️', title: '开放图书馆' },
+          { name: 'Ebookde', url: 'https://www.ebookde/', icon: '📖', title: '电子书资源' },
+          { name: 'Libgen', url: 'http://libgen.rs/', icon: '📚', title: '图书馆创世纪' },
+          { name: 'Bookboon', url: 'https://bookboon.com/', icon: '📖', title: '免费教科书' },
+          { name: 'Free-ebooks', url: 'https://www.free-ebooks.net/', icon: '📖', title: '免费电子书' },
+          { name: 'Freebookspot', url: 'http://www.freebookspot.es/', icon: '📚', title: '书籍下载站' },
+          { name: 'Bookyards', url: 'https://www.bookyards.com/', icon: '📖', title: '电子图书馆' },
+          { name: '计算机书籍控', url: 'http://bestcbooks.com/', icon: '💻', title: '中文计算机书籍' },
+          { name: '鸠摩搜书', url: 'https://www.jiumodiary.com/', icon: '🔍', title: '中文电子书搜索引擎' },
+          { name: 'Manybooks', url: 'https://manybooks.net/', icon: '📖', title: '免费电子书' },
+          { name: '书阁', url: 'https://shuge.org/', icon: '📚', title: '中文古籍资源' },
+          { name: 'Pdf之家', url: 'https://pdfzj.com/', icon: '📄', title: 'PDF 资源' },
+          { name: '好讀', url: 'http://haodoo.net/', icon: '📖', title: '繁体中文电子书' },
+          { name: '图灵社区', url: 'http://www.ituring.com.cn/', icon: '📚', title: '技术书籍出版社' }
+        ]
+      },
+      free: {
+        name: 'Free',
+        icon: '🆓',
+        items: [
+          { name: 'freeCodeCamp', url: 'https://www.freecodecamp.org/', icon: '🔥', title: 'freeCodeCamp' },
+          { name: 'MDN', url: 'https://developer.mozilla.org/', icon: '📖', title: 'MDN Web Docs' },
+          { name: 'Odin Project', url: 'https://www.theodinproject.com/', icon: '⚔️', title: 'The Odin Project' },
+          { name: 'W3Schools', url: 'https://www.w3schools.com/', icon: '📚', title: 'W3Schools' },
+          { name: '菜鸟教程', url: 'https://www.runoob.com/', icon: '🎓', title: '菜鸟教程' },
+          { name: 'Codecademy', url: 'https://www.codecademy.com/', icon: '💻', title: 'Codecademy' }
+        ]
+      },
+      paid: {
+        name: 'Paid',
+        icon: '💰',
+        items: [
+          { name: 'Udemy', url: 'https://www.udemy.com/', icon: '🎓', title: 'Udemy' },
+          { name: 'Coursera', url: 'https://www.coursera.org/', icon: '🏛️', title: 'Coursera' },
+          { name: 'Udacity', url: 'https://www.udacity.com/', icon: '🚗', title: 'Udacity' },
+          { name: 'Pluralsight', url: 'https://www.pluralsight.com/', icon: '👁️', title: 'Pluralsight' },
+          { name: 'LinkedIn Learning', url: 'https://www.linkedin.com/learning/', icon: '💼', title: 'LinkedIn Learning' }
+        ]
+      },
+      practice: {
+        name: 'Practice',
+        icon: '💪',
+        items: [
+          { name: 'LeetCode', url: 'https://leetcode.com/', icon: '📝', title: 'LeetCode' },
+          { name: 'HackerRank', url: 'https://www.hackerrank.com/', icon: '📊', title: 'HackerRank' },
+          { name: 'Codewars', url: 'https://www.codewars.com/', icon: '⚔️', title: 'Codewars' },
+          { name: 'Codeforces', url: 'https://codeforces.com/', icon: '💪', title: 'Codeforces' },
+          { name: 'GeeksforGeeks', url: 'https://www.geeksforgeeks.org/', icon: '🤓', title: 'GeeksforGeeks' },
+          { name: 'Exercism', url: 'https://exercism.io/', icon: '🏃', title: 'Exercism' },
+          { name: 'Project Euler', url: 'https://projecteuler.net/', icon: '📐', title: 'Project Euler' }
+        ]
+      }
+    }
+  },
+
+  // ============================================
+  // Community 社区
+  // ============================================
+  community: {
+    name: 'Community',
+    icon: '👥',
+    subcategories: {
+      github: {
+        name: 'GitHub',
+        icon: '🐙',
+        items: [
+          { name: 'GitHub', url: 'https://github.com/', icon: '🐙', title: 'GitHub' },
+          { name: 'GitHub Pages', url: 'https://pages.github.com/', icon: '📄', title: 'GitHub Pages' },
+          { name: 'GitHub Gist', url: 'https://gist.github.com/', icon: '📝', title: 'GitHub Gist' },
+          { name: 'GitHub Trending', url: 'https://github.com/trending', icon: '📈', title: 'GitHub Trending' }
+        ]
+      },
+      forums: {
+        name: 'Forums',
+        icon: '💬',
+        items: [
+          { name: 'Stack Overflow', url: 'https://stackoverflow.com/', icon: '📚', title: 'Stack Overflow' },
+          { name: 'V2EX', url: 'https://www.v2ex.com/', icon: '🌐', title: 'V2EX' },
+          { name: '掘金', url: 'https://juejin.cn/', icon: '💎', title: '掘金' },
+          { name: 'SegmentFault', url: 'https://segmentfault.com/', icon: '🔷', title: 'SegmentFault' },
+          { name: '知乎', url: 'https://www.zhihu.com/', icon: '💬', title: '知乎' },
+          { name: 'CSDN', url: 'https://www.csdn.net/', icon: '📰', title: 'CSDN' }
+        ]
+      },
+      blogs: {
+        name: 'Blogs',
+        icon: '📝',
+        items: [
+          { name: 'DEV.to', url: 'https://dev.to/', icon: '👩‍💻', title: 'DEV Community' },
+          { name: 'Hashnode', url: 'https://hashnode.com/', icon: '📝', title: 'Hashnode' },
+          { name: 'Medium', url: 'https://medium.com/', icon: '📖', title: 'Medium' },
+          { name: 'InfoQ', url: 'https://www.infoq.cn/', icon: '📰', title: 'InfoQ' }
+        ]
+      }
+    }
+  },
+
+  // ============================================
+  // Design 设计资源
+  // ============================================
+  design: {
+    name: 'Design',
+    icon: '🎨',
+    subcategories: {
+      'free-assets': {
+        name: 'Free Assets',
+        icon: '🆓',
+        items: [
+          { name: 'Freepik', url: 'https://www.freepik.com/', icon: '🎨', title: 'Freepik 免费矢量素材' },
+          { name: 'Unsplash', url: 'https://www.unsplash.com/', icon: '📷', title: 'Unsplash 免费高清图片' },
+          { name: 'Pexels', url: 'https://www.pexels.com/', icon: '📷', title: 'Pexels 免费图片视频' },
+          { name: '365psd', url: 'https://365psd.com/', icon: '🖼️', title: '365psd 免费 PSD 素材' },
+          { name: 'Allfreedownload', url: 'https://all-free-download.com/', icon: '📦', title: 'Allfreedownload 免费素材' },
+          { name: 'Visualhunt', url: 'https://visualhunt.com/', icon: '🔍', title: 'Visualhunt 图片搜索' },
+          { name: 'Vecteezy', url: 'https://www.vecteezy.com/', icon: '🔷', title: 'Vecteezy 矢量素材' },
+          { name: 'Ac-illust', url: 'https://ac-illust.com/', icon: '🎨', title: 'Ac-illust 免费插图' }
+        ]
+      },
+      inspiration: {
+        name: 'Inspiration',
+        icon: '💡',
+        items: [
+          { name: 'Pinterest', url: 'https://www.pinterest.com/', icon: '📌', title: 'Pinterest 设计灵感' },
+          { name: 'Behance', url: 'https://www.behance.net/', icon: '🎨', title: 'Behance 设计作品集' },
+          { name: 'Dribbble', url: 'https://dribbble.com/', icon: '🏀', title: 'Dribbble 设计师社区' },
+          { name: '花瓣网', url: 'https://www.huaban.com/', icon: '🌸', title: '花瓣网 设计灵感采集' },
+          { name: 'Pixiv', url: 'https://www.pixiv.net/', icon: '🎨', title: 'Pixiv 插画社区' }
+        ]
+      },
+      colors: {
+        name: 'Colors',
+        icon: '🎨',
+        items: [
+          { name: 'Nippon Colors', url: 'https://www.nipponcolors.com/', icon: '🎌', title: '日本传统色彩' },
+          { name: '中国色', url: 'http://zhongguose.com/', icon: '🇨🇳', title: '中国传统色彩' }
+        ]
+      },
+      premium: {
+        name: 'Premium',
+        icon: '💎',
+        items: [
+          { name: 'Vexels', url: 'https://www.vexels.com/', icon: '💎', title: 'Vexels 高级素材' },
+          { name: 'Shutterstock', url: 'https://www.shutterstock.com/', icon: '📷', title: 'Shutterstock 素材库' },
+          { name: 'Everypixel', url: 'https://www.everypixel.com/', icon: '🔍', title: 'Everypixel 图片搜索' },
+          { name: '千图网', url: 'https://www.58pic.com/', icon: '📊', title: '千图网 设计素材' }
+        ]
+      }
+    }
+  },
+
+  // ============================================
+  // Tools 工具
+  // ============================================
+  tools: {
+    name: 'Tools',
+    icon: '🛠️',
+    subcategories: {
+      ide: {
+        name: 'IDE',
+        icon: '💡',
+        items: [
+          { name: 'VS Code', url: 'https://code.visualstudio.com/', icon: '💙', title: 'VS Code' },
+          { name: 'IntelliJ IDEA', url: 'https://www.jetbrains.com/idea/', icon: '💡', title: 'IntelliJ IDEA' },
+          { name: 'WebStorm', url: 'https://www.jetbrains.com/webstorm/', icon: '🌐', title: 'WebStorm' },
+          { name: 'PyCharm', url: 'https://www.jetbrains.com/pycharm/', icon: '🐍', title: 'PyCharm' },
+          { name: 'Eclipse', url: 'https://www.eclipse.org/', icon: '🌑', title: 'Eclipse IDE' },
+          { name: 'Cursor', url: 'https://cursor.sh/', icon: '🖱️', title: 'Cursor AI' }
+        ]
+      },
+      'api-tools': {
+        name: 'API Tools',
+        icon: '📮',
+        items: [
+          { name: 'Postman', url: 'https://www.postman.com/', icon: '📮', title: 'Postman' },
+          { name: 'Insomnia', url: 'https://insomnia.rest/', icon: '🌙', title: 'Insomnia' },
+          { name: 'Hoppscotch', url: 'https://hoppscotch.io/', icon: '🚀', title: 'Hoppscotch' },
+          { name: 'Thunder Client', url: 'https://www.thunderclient.com/', icon: '⚡', title: 'Thunder Client' }
+        ]
+      },
+      design: {
+        name: 'Design Tools',
+        icon: '🎨',
+        items: [
+          { name: 'Figma', url: 'https://www.figma.com/', icon: '🎨', title: 'Figma 协作设计' },
+          { name: 'Canva', url: 'https://www.canva.com/', icon: '📐', title: 'Canva 在线设计' },
+          { name: 'Photopea', url: 'https://www.photopea.com/', icon: '🖼️', title: 'Photopea 在线 PS' },
+          { name: 'Remove.bg', url: 'https://www.remove.bg/', icon: '✂️', title: 'Remove.bg 抠图' },
+          { name: 'Photomosh', url: 'https://photomosh.com/', icon: '🎬', title: 'Photomosh 故障艺术效果' },
+          { name: 'PhotoLab', url: 'https://photolab.me/', icon: '🖼️', title: 'PhotoLab 图片特效' },
+          { name: 'MakeAGif', url: 'https://www.makeagif.com/', icon: '🎞️', title: 'MakeAGif GIF 制作' },
+          { name: 'WordArt', url: 'https://www.wordart.com/', icon: '�', title: 'WordArt 词云生成' },
+          { name: 'Vector Magic', url: 'https://vectormagic.com/', icon: '🔷', title: 'Vector Magic 矢量转换' },
+          { name: 'Icons8', url: 'https://icons8.com/', icon: '🎨', title: 'Icons8 图标资源' }
+        ]
+      },
+      utilities: {
+        name: 'Utilities',
+        icon: '🔧',
+        items: [
+          { name: 'Regex101', url: 'https://regex101.com/', icon: '🔍', title: 'Regex Tester' },
+          { name: 'JSON Formatter', url: 'https://jsonformatter.org/', icon: '📋', title: 'JSON Formatter' },
+          { name: 'Markdown Guide', url: 'https://www.markdownguide.org/', icon: '📝', title: 'Markdown Guide' },
+          { name: 'CodePen', url: 'https://codepen.io/', icon: '✏️', title: 'CodePen' },
+          { name: 'Carbon', url: 'https://carbon.now.sh/', icon: '🖼️', title: 'Carbon Code Snippets' },
+          { name: 'CloudConvert', url: 'https://cloudconvert.com/', icon: '☁️', title: 'CloudConvert 文件格式转换' },
+          { name: 'Squoosh', url: 'https://squoosh.app/', icon: '📷', title: 'Squoosh 图片压缩' },
+          { name: 'Favicomatic', url: 'https://favicomatic.com/', icon: '🏷️', title: 'Favicomatic Favicon 生成器' }
+        ]
+      },
+      'package-managers': {
+        name: 'Package Managers',
+        icon: '📦',
+        items: [
+          { name: 'NPM', url: 'https://www.npmjs.com/', icon: '📦', title: 'NPM' },
+          { name: 'Yarn', url: 'https://yarnpkg.com/', icon: '🧶', title: 'Yarn' },
+          { name: 'pnpm', url: 'https://pnpm.io/', icon: '📦', title: 'pnpm' },
+          { name: 'PyPI', url: 'https://pypi.org/', icon: '🐍', title: 'PyPI' }
+        ]
+      },
+      'image-tools': {
+        name: 'Image Tools',
+        icon: '🖼️',
+        items: [
+          { name: 'Petalica Paint', url: 'https://petalica-paint.pixiv.dev/index_zh.html', icon: '🎨', title: 'Petalica AI 自动上色' },
+          { name: 'Join Screenshots', url: 'https://join-screenshots.zhanghai.me/', icon: '📱', title: '截图拼接工具' }
+        ]
+      },
+      fun: {
+        name: 'Fun',
+        icon: '🎮',
+        items: [
+          { name: 'Drive & Listen', url: 'https://driveandlisten.herokuapp.com/', icon: '🚗', title: 'Drive & Listen 边开车边听广播' },
+          { name: 'Youka', url: 'https://www.youka.club/', icon: '🎤', title: 'Youka 卡拉OK' }
+        ]
+      },
+      'ai-adult': {
+        name: 'AI Adult',
+        icon: '🔞',
+        items: [
+          { name: 'DeepNude.to', url: 'https://deepnude.to/', icon: '🤖', title: 'DeepNude AI' },
+          { name: 'DeepNude Online', url: 'https://deepnudeonline.com/', icon: '🤖', title: 'DeepNude Online' },
+          { name: 'DeepFake App', url: 'https://deepfakesapp.online/', icon: '🤖', title: 'DeepFake App' },
+          { name: 'DeepNude Bot', url: 'https://t.me/DeepNudeChat_Bot', icon: '📱', title: 'DeepNude Telegram Bot' }
+        ]
+      }
+    }
+  }
+};
+
+// Export for use in app.js
+window.LINKS_DATA = LINKS_DATA;

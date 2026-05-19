@@ -1,0 +1,29 @@
+{
+  "name": "the-code-map",
+  "version": "2.0.0",
+  "description": "A comprehensive collection of coding resources and tutorials for developers",
+  "author": "Zhang Boheng",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangboheng/The-Code-Map.git"
+  },
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static site - no build required'",
+    "lint:html": "npx html-validate index.html",
+    "lint:css": "npx stylelint css/*.css",
+    "test": "echo 'No tests configured yet'"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "programming",
+    "coding",
+    "tutorials",
+    "resources",
+    "javascript",
+    "python",
+    "java",
+    "web-development"
+  ]
+}

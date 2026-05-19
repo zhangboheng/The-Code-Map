@@ -1,521 +1,173 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>The Code Map：Learn Your First Line Code From This Page</title>
-<meta name="keywords" content="Html, CSS, Javascript, jQuery, PHP, Canvas, Vue.js, Python, C, C#, C++, Visual Basic, Java……">
-<meta name="description" content="Learn how to code, from The Code Map">
-<meta name="author" content="Zhang Boheng">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="css/home.css" rel="stylesheet">
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
-<meta name="application-name" content="&nbsp;"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
-<meta name="msvalidate.01" content="D8DDE2C37AA828CA3E69EC1500249731" />
-<script data-ad-client="ca-pub-9510913891214509" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script src="js/jquery-3.5.1.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Code Map - 开发者资源导航，收录各类编程学习网站、工具和资源">
+  <meta name="keywords" content="编程,开发,资源导航,学习,工具">
+  <meta name="author" content="zhangboheng">
+  <meta name="theme-color" content="#6366f1">
+  
+  <title>The Code Map 🔗 开发者资源导航</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon-180x180.png">
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-<div class="pull-push">
-  <div class="menu-top1"></div>
-  <div class="menu-top2"></div>
-  <div class="menu-top3"></div>
-  <div class="menu-top4"></div>
-  <div class="menu-top5"></div>
-  <button class="first-button"><img src="img/downnarrow.gif" alt="up and down"/></button>
-  <button class="second-button"><img src="img/article.png" alt="article"/></button>
-  <button class="third-button"><img src="img/book.png" alt="book"/></button>
-  <button class="fourth-button"><img src="img/design.png" alt="design"/></button>
-  <button class="fifth-button"><img src="img/tool.png" alt="tools"/></button>
-</div>
-<div class="search-box">
-  <form action="https://www.google.com/search" method="get">
-    <input type="text" name="q" placeholder="Search You Know" />
-  </form>
-</div>
-<div class="solid-bar"> <i class="icon"><img src="img/clock.png" alt="thisTime"></i><span></span>&nbsp;&nbsp;
-  <ul class="code-list">
-    <li><a href="#html">HTML</a></li>
-    <li><a href="#css">CSS</a></li>
-    <li><a href="#javascript">Javascript</a></li>
-    <li><a href="#jquery">jQuery</a></li>
-    <li><a href="#php">PHP</a></li>
-    <li><a href="#python">Python</a></li>
-    <li><a href="#java">Java</a></li>
-    <li><a href="#c#">C#</a></li>
-    <li><a href="#c++">C++</a></li>
-    <li><a href="#ruby">Ruby</a></li>
-    <li><a href="#go">Go</a></li>
-    <li><a href="#swift">Swift</a></li>
-    <li><a href="#more">More</a></li>
-  </ul>
-</div>
-<div class="msolid-bar">
-  <canvas id="rectangle-menu" width="50px" height="50px">You're browser is not support canvas, you should use other browsers</canvas>
-  <ul class="mcode-list">
-    <li>TheCodeMap.com</li>
-    <li><a href="#html">HTML</a></li>
-    <li><a href="#css">CSS</a></li>
-    <li><a href="#javascript">Javascript</a></li>
-    <li><a href="#jquery">jQuery</a></li>
-    <li><a href="#php">PHP</a></li>
-    <li><a href="#python">Python</a></li>
-    <li><a href="#java">Java</a></li>
-    <li><a href="#c#">C#</a></li>
-    <li><a href="#c++">C++</a></li>
-    <li><a href="#ruby">Ruby</a></li>
-    <li><a href="#go">Go</a></li>
-    <li><a href="#swift">Swift</a></li>
-    <li><a href="#more">More</a></li>
-  </ul>
-</div>
-<canvas id="menutop5act"></canvas>
-<div class="top-banner"> <img src="img/logo.png" alt="logo" /> </div>
-<div class="middle-list">
-  <h2>TIPS</h2>
-  <ul class="web-map">
-    <li>▶ 2020-11-19 The website is updating new things when you click that top-right button</li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2>PARA</h2>
-  <ul class="web-map">
-    <li><a href="#">[Python Notes] How To Generate QRcodes with Python</a></li><hr>
-	<li><a href="#">[Javascript Notes] How To Generate QRcodes with Javascript</a></li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2><a name="html">WEB</a></h2>
-  <ul class="web-map">
-    <li>
-      <h4><a name="html">HTML</a></h4>
-    </li>
-    <li><a href="https://www.w3.org/" title="Learn Html & CSS Standard">W3</a></li>
-    <li><a href="https://www.html.com/" title="Begin learn html & CSS">HTML</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://developer.mozilla.org/" title="MDN Web Docs">MDN</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4><a name="css">CSS</a></h4>
-    </li>
-    <li><a href="https://www.w3.org/" title="Learn Html & CSS Standard">W3</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS is a modern CSS framework">W3.css</a></li>
-    <li><a href="https://animate.style/" title="Just-add-water CSS animations">Animate-style</a></li>
-    <li><a href="https://fontawesome.com/" title="The world's most popular and easiest to use icon set just got an upgrade. More icons. More styles. More Options.">Font Awesome</a></li>
-    <li><a href="https://sass-lang.com/" title="Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.">Sass</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://developer.mozilla.org/" title="MDN Web Docs">MDN</a></li>
-    <li><a href="https://learnlayout.com/" title="Learn CSS Layout">Learnlayout</a></li>
-    <li><a href="https://get.foundation/" title="The most advanced responsive front-end framework in the world.">Foundation</a></li>
-    <li><a href="https://www.html.com/" title="Begin learn html & CSS">HTML</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4><a name="javascript">Javascript</a></h4>
-    </li>
-    <li><a href="https://d3js.org/" title="Javascript">D3.js</a></li>
-    <li><a href="https://www.w3.org/" title="Learn Html & CSS Standard">W3</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://javascript.com/" title="Javascript">Javascript</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://developer.mozilla.org/" title="MDN Web Docs">MDN</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-	<li><a href="https://www.programiz.com/" title="Programiz: Learn to Code for Free"><i class="list-icon"><img src="img/programiz.png" alt="programiz-logo"></i>Programiz</a></li>
-    <li><a href="https://www.w3schools.com/js/js_ajax_intro.asp" title="AJAX Tutorial"><i class="list-icon"><img src="img/ajax.png" alt="ajax-logo"></i>AJAX</a></li>
-    <li><a href="https://json.org" title="JSON Official"><i class="list-icon"><img src="img/json.png" alt="json-logo"></i>JSON</a></li>
-    <li><a href="https://nodejs.org/" title="Nodejs Official"><i class="list-icon"><img src="img/nodejs.png" alt="nodejs-logo"></i>Nodejs</a></li>
-    <li><a href="https://www.typescriptlang.org/" title="Typescript Official"><i class="list-icon"><img src="img/typescript.png" alt="typescript-logo"></i>Typescript</a></li>
-    <li><a href="https://www.javascripting.com/" title="All Javascript Collection"><i class="list-icon"><img src="img/javascripting.png" alt="javascripting-logo"></i>Javascripting</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4><a name="jquery">jQuery</a></h4>
-    </li>
-    <li><a href="https://jquery.com/" title="The Write Less, Do More, JavaScript Library"><i class="list-icon"><img src="img/jQuery.png" alt="jQuery-logo"></i>jQuery</a></li>
-    <li><a href="https://jqueryui.com/" title="jQuery User Interface JavaScript Library"><i class="list-icon"><img src="img/jQuery_ui.png" alt="jQuery_ui-logo"></i>jQuery UI</a></li>
-    <li><a href="https://jquerymobile.com/" title="A Touch-Optimized Web Framework"><i class="list-icon"><img src="img/jQuery_mobile.png" alt="jQuery_mobile-logo"></i>jQuery Mobile</a></li>
-    <li><a href="https://codepen.io/" title="The best place to build, test, and discover front-end code"><i class="list-icon"><img src="img/codeopen.png" alt="codeopen-logo"></i>Codeopen</a></li>
-    <li><a href="https://www.17sucai.com/" title="jQuery网页特效最全网页模板和网站模板jQuery代码_17素材网"><i class="list-icon"><img src="img/17sucai.png" alt="17sucai-logo"></i>17素材</a></li>
-    <li><a href="https://www.jq22.com/" title="jQuery插件库-收集最全最新最好的jQuery插件"><i class="list-icon"><img src="img/jQueryplugins.png" alt="jQueryplugins-logo"></i>jQuery插件库</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Framework</h4>
-    </li>
-    <li><a href="https://angular.io/" title="One framework. Mobile & desktop"><i class="list-icon"><img src="img/angularjs.png" alt="angularjs-logo"></i>Angularjs</a></li>
-    <li><a href="https://getbootstrap.com/" title="Quickly design and customize responsive mobile-first sites with Bootstrap"><i class="list-icon"><img src="img/bootstrap.png" alt="bootstrap-logo"></i>Bootstrap</a></li>
-    <li><a href="https://emberjs.com/" title="A framework for ambitious web developers"><i class="list-icon"><img src="img/emberjs.png" alt="emberjs-logo"></i>Ember</a></li>
-    <li><a href="https://reactjs.org/" title="A JavaScript library for building user interfaces"><i class="list-icon"><img src="img/reactjs.png" alt="reactjs-logo"></i>React</a></li>
-    <li><a href="https://vuejs.org/" title="The Progressive JavaScript Framework"><i class="list-icon"><img src="img/vuejs.png" alt="vuejs-logo"></i>Vue.js</a></li>
-    <li><a href="https://webix.com/" title="JavaScript UI library and framework for speeding up web development"><i class="list-icon"><img src="img/webix.png" alt="webix-logo"></i>Webix</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>SQL</h4>
-    </li>
-    <li><a href="https://www.mysql.com/" title="MySQL is an open-source relational database management system"><i class="list-icon"><img src="img/mysql.png" alt="mysql-logo"></i>MySQL</a></li>
-    <li><a href="https://www.sqlite.org/" title="SQLite is a relational database management system"><i class="list-icon"><img src="img/sqlite.png" alt="sqlite-logo"></i>SQLite</a></li>
-    <li><a href="https://mariadb.org/" title="MariaDB Server is one of the most popular open source relational databases."><i class="list-icon"><img src="img/mariadb.png" alt="mariadb-logo"></i>MariaDB</a></li>
-    <li><a href="https://www.microsoft.com/en-us/microsoft-365/access" title="Microsoft Access is a database management system"><i class="list-icon"><img src="img/msaccess.png" alt="msaccess-logo"></i>MS Access</a></li>
-    <li><a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" title="Microsoft SQL Server is a relational database management system developed by Microsoft"><i class="list-icon"><img src="img/sqlserver.png" alt="sqlserver-logo"></i>SQL Server</a></li>
-    <li><a href="https://www.oracle.com/" title="Oracle Autonomous Database is an all-in-one cloud database"><i class="list-icon"><img src="img/oracle.png" alt="oracle-logo"></i>Oracle</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Question</h4>
-    </li>
-    <li><a href="https://projecteuler.net/" title="Project Euler is a series of challenging mathematical/computer programming problems"><i class="list-icon"><img src="img/projecteuler.png" alt="projecteuler-logo"></i>Project Euler</a></li>
-    <li><a href="https://exercism.io/" title="Code Practice and Mentorship for Everyone"><i class="list-icon"><img src="img/exercism.png" alt="exercism-logo"></i>Exercism</a></li>
-    <li><a href="https://www.checkio.org/" title="Practise Typescript And Python"><i class="list-icon"><img src="img/checkio.png" alt="checkio-logo"></i>CheckIO</a></li>
-    <li><a href="https://www.hackerrank.com/" title="Practise Code and Join Companies"><i class="list-icon"><img src="img/hackrank.png" alt="hackerran-logo"></i>HackerRank</a></li>
-    <li><a href="https://www.codewars.com/" title="Achieve mastery through challenge"><i class="list-icon"><img src="img/codewars.png" alt="codewars-logo"></i>Codewars</a></li>
-    <li><a href="https://www.codingame.com/" title="STEP UP YOUR CODING GAME"><i class="list-icon"><img src="img/codingame.png" alt="Codingame-logo"></i>Codingame</a></li>
-    <li><a href="https://edabit.com/" title="Code Languages Questions"><i class="list-icon"><img src="img/edabit.png" alt="edabit-logo"></i>Edabit</a></li>
-    <li><a href="https://leetcode.com/" title="LeetCode - The World's Leading Online Programming Learning Platform"><i class="list-icon"><img src="img/leetcode.png" alt="leetcode-logo"></i>Leetcode</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Deployment</h4>
-    </li>
-    <li><a href="https://www.aerobatic.com/" title="Turbocharged static web hosting"><i class="list-icon"><img src="img/aerobatic.png" alt="aerobatic-logo"></i>Aerobatic</a></li>
-    <li><a href="https://azure.microsoft.com/" title="Microsoft Online Run Application Platform"><i class="list-icon"><img src="img/azure.png" alt="azure-logo"></i>Azure</a></li>
-    <li><a href="https://bitbucket.org/" title="Bitbucket | The Git solution for professional teams"><i class="list-icon"><img src="img/bitbucket.png" alt="bitbucket-logo"></i>Bitbucket</a></li>
-    <li><a href="https://workers.cloudflare.com/" title="Using javascript to run somethings"><i class="list-icon"><img src="img/workers.png" alt="workers-logo"></i>Cloudflare Workers</a></li>
-    <li><a href="https://www.coding.net/" title="中国收购的国际代码云部署平台"><i class="list-icon"><img src="img/coding.png" alt="coding-logo"></i>Coding</a></li>
-    <li><a href="https://firebase.google.com/" title="Firebase"><i class="list-icon"><img src="img/firebase.png" alt="firebaseg-logo"></i>Firebase</a></li>
-    <li><a href="https://pages.github.com/" title="The World Biggest Open Sources Share Website"><i class="list-icon"><img src="img/github.png" alt="github-logo"></i>Github</a></li>
-    <li><a href="https://docs.gitlab.com/ee/user/project/pages/index.html" title="Gitlab pages"><i class="list-icon"><img src="img/gitlab.png" alt="gitlab-logo"></i>Gitlab</a></li>
-    <li><a href="https://www.heroku.com/" title="A platform to run your application in the cloud"><i class="list-icon"><img src="img/heroku.png" alt="heroku-logo"></i>Heroku</a></li>
-    <li><a href="https://www.netlify.com/" title="Netlify: All-in-one platform for automating modern web projects"><i class="list-icon"><img src="img/netlify.png" alt="netlify-logo"></i>Netlify</a></li>
-    <li><a href="https://www.surge.sh/" title="Static web publishing for Front-End Developers"><i class="list-icon"><img src="img/Surge.png" alt="Surge-logo"></i>Surge</a></li>
-    <li><a href="https://upcloud.com/" title="Compare UpCloud, Linode alternative - UpCloud"><i class="list-icon"><img src="img/upcloud.png" alt="upcloud-logo"></i>Upcloud</a></li>
-    <li><a href="https://vercel.com/" title="Deploy web projects with the best frontend developer experience"><i class="list-icon"><img src="img/vercel.png" alt="vercel-logo"></i>Vercel</a></li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2><a name="php">PHP</a></h2>
-  <ul class="web-map">
-    <li>
-      <h4>Begin</h4>
-    </li>
-    <li><a href="https://www.php.net/" title="PHP: Hypertext Preprocessor"><i class="list-icon"><img src="img/php.png" alt="php-logo"></i>PHP</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Question</h4>
-    </li>
-    <li><a href="https://www.codingame.com/" title="STEP UP YOUR CODING GAME"><i class="list-icon"><img src="img/codingame.png" alt="Codingame-logo"></i>Codingame</a></li>
-    <li><a href="https://www.codewars.com/" title="Achieve mastery through challenge"><i class="list-icon"><img src="img/codewars.png" alt="codewars-logo"></i>Codewars</a></li>
-    <li><a href="https://edabit.com/" title="Code Languages Questions"><i class="list-icon"><img src="img/edabit.png" alt="edabit-logo"></i>Edabit</a></li>
-    <li><a href="https://exercism.io/" title="Code Practice and Mentorship for Everyone"><i class="list-icon"><img src="img/exercism.png" alt="exercism-logo"></i>Exercism</a></li>
-    <li><a href="https://projecteuler.net/" title="Project Euler is a series of challenging mathematical/computer programming problems"><i class="list-icon"><img src="img/projecteuler.png" alt="projecteuler-logo"></i>Project Euler</a></li>
-    <li><a href="https://leetcode.com/" title="LeetCode - The World's Leading Online Programming Learning Platform"><i class="list-icon"><img src="img/leetcode.png" alt="leetcode-logo"></i>Leetcode</a></li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2><a name="python">Python</a></h2>
-  <ul class="web-map">
-    <li>
-      <h4>Begin</h4>
-    </li>
-    <li><a href="https://www.python.org/" title="Python Official"><i class="list-icon"><img src="img/python.png" alt="python-logo"></i>Python</a></li>
-    <li><a href="https://www.numpy.org/" title="Numpy Official"><i class="list-icon"><img src="img/numpy.png" alt="numpy-logo"></i>Numpy</a></li>
-    <li><a href="https://www.matplotlib.org/" title="Matplotlib Official"><i class="list-icon"><img src="img/matplotlib.png" alt="matplotlib-logo"></i>Matplotlib</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-<li><a href="https://www.programiz.com/" title="Programiz: Learn to Code for Free"><i class="list-icon"><img src="img/programiz.png" alt="programiz-logo"></i>Programiz</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Crawler</h4>
-    </li>
-    <li><a href="https://scrapy.org/" title="Scrapy Official"><i class="list-icon"><img src="img/scrapy.png" alt="scrapy-logo"></i>Scrapy</a></li>
-    <li><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" title="BeautifulSoup Official"><i class="list-icon"><img src="img/beautifulsoup.png" alt="beautifulsoup-logo"></i>BeautifulSoup</a></li>
-    <li><a href="https://docs.python.org/3/library/urllib.html" title="Python Docs">Urllib</a></li>
-	<li><a href="https://requests.readthedocs.io/en/master/" title="Requests Official">Requests</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Question</h4>
-    </li>
-    <li><a href="https://codingbat.com/" title="Code Practice">CodingBat</a></li>
-    <li><a href="https://edabit.com/" title="Code Languages Questions"><i class="list-icon"><img src="img/edabit.png" alt="edabit-logo"></i>Edabit</a></li>
-    <li><a href="https://leetcode.com/" title="LeetCode - The World's Leading Online Programming Learning Platform"><i class="list-icon"><img src="img/leetcode.png" alt="leetcode-logo"></i>Leetcode</a></li>
-    <li><a href="https://exercism.io/" title="Code Practice and Mentorship for Everyone"><i class="list-icon"><img src="img/exercism.png" alt="exercism-logo"></i>Exercism</a></li>
-    <li><a href="https://www.hackerrank.com/" title="Practise Code and Join Companies"><i class="list-icon"><img src="img/hackrank.png" alt="hackerran-logo"></i>HackerRank</a></li>
-    <li><a href="https://www.checkio.org/" title="Practise Typescript And Python"><i class="list-icon"><img src="img/checkio.png" alt="checkio-logo"></i>CheckIO</a></li>
-    <li><a href="https://www.codewars.com/" title="Achieve mastery through challenge"><i class="list-icon"><img src="img/codewars.png" alt="codewars-logo"></i>Codewars</a></li>
-    <li><a href="https://projecteuler.net/" title="Project Euler is a series of challenging mathematical/computer programming problems"><i class="list-icon"><img src="img/projecteuler.png" alt="projecteuler-logo"></i>Project Euler</a></li>
-    <li><a href="https://www.codingame.com/" title="STEP UP YOUR CODING GAME"><i class="list-icon"><img src="img/codingame.png" alt="Codingame-logo"></i>Codingame</a></li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2><a name="java">Java</a></h2>
-  <ul class="web-map">
-    <li>
-      <h4>Begin</h4>
-    </li>
-    <li><a href="https://www.java.com/" title="Java Official"><i class="list-icon"><img src="img/java.png" alt="java-logo"></i>Java</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-	  <li><a href="https://www.programiz.com/" title="Programiz: Learn to Code for Free"><i class="list-icon"><img src="img/programiz.png" alt="programiz-logo"></i>Programiz</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Question</h4>
-    </li>
-    <li><a href="https://codingbat.com/" title="Code Practice">CodingBat</a></li>
-    <li><a href="https://www.codewars.com/" title="Achieve mastery through challenge"><i class="list-icon"><img src="img/codewars.png" alt="codewars-logo"></i>Codewars</a></li>
-    <li><a href="https://projecteuler.net/" title="Project Euler is a series of challenging mathematical/computer programming problems"><i class="list-icon"><img src="img/projecteuler.png" alt="projecteuler-logo"></i>Project Euler</a></li>
-    <li><a href="https://edabit.com/" title="Code Languages Questions"><i class="list-icon"><img src="img/edabit.png" alt="edabit-logo"></i>Edabit</a></li>
-    <li><a href="https://leetcode.com/" title="LeetCode - The World's Leading Online Programming Learning Platform"><i class="list-icon"><img src="img/leetcode.png" alt="leetcode-logo"></i>Leetcode</a></li>
-    <li><a href="https://www.hackerrank.com/" title="Practise Code and Join Companies"><i class="list-icon"><img src="img/hackrank.png" alt="hackerran-logo"></i>HackerRank</a></li>
-    <li><a href="https://www.codingame.com/" title="STEP UP YOUR CODING GAME"><i class="list-icon"><img src="img/codingame.png" alt="Codingame-logo"></i>Codingame</a></li>
-    <li><a href="https://exercism.io/" title="Code Practice and Mentorship for Everyone"><i class="list-icon"><img src="img/exercism.png" alt="exercism-logo"></i>Exercism</a></li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2><a name="c#">C#</a></h2>
-  <ul class="web-map">
-    <li>
-      <h4>Begin</h4>
-    </li>
-    <li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/" title="C# Official"><i class="list-icon"><img src="img/csharp.png" alt="csharp-logo"></i>C#</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-	<li><a href="https://www.programiz.com/" title="Programiz: Learn to Code for Free"><i class="list-icon"><img src="img/programiz.png" alt="programiz-logo"></i>Programiz</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Question</h4>
-    </li>
-    <li><a href="https://www.codewars.com/" title="Achieve mastery through challenge"><i class="list-icon"><img src="img/codewars.png" alt="codewars-logo"></i>Codewars</a></li>
-    <li><a href="https://www.hackerrank.com/" title="Practise Code and Join Companies"><i class="list-icon"><img src="img/hackrank.png" alt="hackerran-logo"></i>HackerRank</a></li>
-    <li><a href="https://www.codingame.com/" title="STEP UP YOUR CODING GAME"><i class="list-icon"><img src="img/codingame.png" alt="Codingame-logo"></i>Codingame</a></li>
-    <li><a href="https://projecteuler.net/" title="Project Euler is a series of challenging mathematical/computer programming problems"><i class="list-icon"><img src="img/projecteuler.png" alt="projecteuler-logo"></i>Project Euler</a></li>
-    <li><a href="https://leetcode.com/" title="LeetCode - The World's Leading Online Programming Learning Platform"><i class="list-icon"><img src="img/leetcode.png" alt="leetcode-logo"></i>Leetcode</a></li>
-    <li><a href="https://exercism.io/" title="Code Practice and Mentorship for Everyone"><i class="list-icon"><img src="img/exercism.png" alt="exercism-logo"></i>Exercism</a></li>
-    <li><a href="https://edabit.com/" title="Code Languages Questions"><i class="list-icon"><img src="img/edabit.png" alt="edabit-logo"></i>Edabit</a></li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2><a name="c++">C++</a></h2>
-  <ul class="web-map">
-    <li>
-      <h4>Begin</h4>
-    </li>
-    <li><a href="https://isocpp.org/" title="C++ Official"><i class="list-icon"><img src="img/c++.png" alt="c++-logo"></i>C++</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-	<li><a href="https://www.programiz.com/" title="Programiz: Learn to Code for Free"><i class="list-icon"><img src="img/programiz.png" alt="programiz-logo"></i>Programiz</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Question</h4>
-    </li>
-    <li><a href="https://edabit.com/" title="Code Languages Questions"><i class="list-icon"><img src="img/edabit.png" alt="edabit-logo"></i>Edabit</a></li>
-    <li><a href="https://www.hackerrank.com/" title="Practise Code and Join Companies"><i class="list-icon"><img src="img/hackrank.png" alt="hackerran-logo"></i>HackerRank</a></li>
-    <li><a href="https://www.codewars.com/" title="Achieve mastery through challenge"><i class="list-icon"><img src="img/codewars.png" alt="codewars-logo"></i>Codewars</a></li>
-    <li><a href="https://exercism.io/" title="Code Practice and Mentorship for Everyone"><i class="list-icon"><img src="img/exercism.png" alt="exercism-logo"></i>Exercism</a></li>
-    <li><a href="https://projecteuler.net/" title="Project Euler is a series of challenging mathematical/computer programming problems"><i class="list-icon"><img src="img/projecteuler.png" alt="projecteuler-logo"></i>Project Euler</a></li>
-    <li><a href="https://www.codingame.com/" title="STEP UP YOUR CODING GAME"><i class="list-icon"><img src="img/codingame.png" alt="Codingame-logo"></i>Codingame</a></li>
-    <li><a href="https://leetcode.com/" title="LeetCode - The World's Leading Online Programming Learning Platform"><i class="list-icon"><img src="img/leetcode.png" alt="leetcode-logo"></i>Leetcode</a></li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2><a name="ruby">Ruby</a></h2>
-  <ul class="web-map">
-    <li>
-      <h4>Begin</h4>
-    </li>
-    <li><a href="https://www.ruby-lang.org/" title="Ruby Official"><i class="list-icon"><img src="img/ruby.png" alt="ruby-logo"></i>Ruby</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Question</h4>
-    </li>
-    <li><a href="https://exercism.io/" title="Code Practice and Mentorship for Everyone"><i class="list-icon"><img src="img/exercism.png" alt="exercism-logo"></i>Exercism</a></li>
-    <li><a href="https://edabit.com/" title="Code Languages Questions"><i class="list-icon"><img src="img/edabit.png" alt="edabit-logo"></i>Edabit</a></li>
-    <li><a href="https://www.codingame.com/" title="STEP UP YOUR CODING GAME"><i class="list-icon"><img src="img/codingame.png" alt="Codingame-logo"></i>Codingame</a></li>
-    <li><a href="https://www.hackerrank.com/" title="Practise Code and Join Companies"><i class="list-icon"><img src="img/hackrank.png" alt="hackerran-logo"></i>HackerRank</a></li>
-    <li><a href="https://projecteuler.net/" title="Project Euler is a series of challenging mathematical/computer programming problems"><i class="list-icon"><img src="img/projecteuler.png" alt="projecteuler-logo"></i>Project Euler</a></li>
-    <li><a href="https://leetcode.com/" title="LeetCode - The World's Leading Online Programming Learning Platform"><i class="list-icon"><img src="img/leetcode.png" alt="leetcode-logo"></i>Leetcode</a></li>
-    <li><a href="https://www.codewars.com/" title="Achieve mastery through challenge"><i class="list-icon"><img src="img/codewars.png" alt="codewars-logo"></i>Codewars</a></li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2><a name="go">Go</a></h2>
-  <ul class="web-map">
-    <li>
-      <h4>Begin</h4>
-    </li>
-    <li><a href="https://golang.org/" title="Golang Official"><i class="list-icon"><img src="img/go.png" alt="go-logo"></i>Go</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Question</h4>
-    </li>
-    <li><a href="https://leetcode.com/" title="LeetCode - The World's Leading Online Programming Learning Platform"><i class="list-icon"><img src="img/leetcode.png" alt="leetcode-logo"></i>Leetcode</a></li>
-    <li><a href="https://exercism.io/" title="Code Practice and Mentorship for Everyone"><i class="list-icon"><img src="img/exercism.png" alt="exercism-logo"></i>Exercism</a></li>
-    <li><a href="https://edabit.com/" title="Code Languages Questions"><i class="list-icon"><img src="img/edabit.png" alt="edabit-logo"></i>Edabit</a></li>
-    <li><a href="https://www.codewars.com/" title="Achieve mastery through challenge"><i class="list-icon"><img src="img/codewars.png" alt="codewars-logo"></i>Codewars</a></li>
-    <li><a href="https://projecteuler.net/" title="Project Euler is a series of challenging mathematical/computer programming problems"><i class="list-icon"><img src="img/projecteuler.png" alt="projecteuler-logo"></i>Project Euler</a></li>
-    <li><a href="https://www.codingame.com/" title="STEP UP YOUR CODING GAME"><i class="list-icon"><img src="img/codingame.png" alt="Codingame-logo"></i>Codingame</a></li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2><a name="swift">Swift</a></h2>
-  <ul class="web-map">
-    <li>
-      <h4>Begin</h4>
-    </li>
-    <li><a href="https://swift.org/" title="Swift Official"><i class="list-icon"><img src="img/swift.png" alt="swift-logo"></i>Swift</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3school.com.cn/" title="W3school 在线教程">W3school</a></li>
-    <li><a href="https://www.runoob.com/" title="学的不仅是技术，更是梦想！">菜鸟教程</a></li>
-    <li><a href="https://www.sololearn.com/" title="SoloLearn: Learn to Code for Free!">Sololearn</a></li>
-    <li><a href="https://www.codecademy.com/" title="Learn to Code - for Free | Codecademy">Codecademy</a></li>
-	<li><a href="https://www.programiz.com/" title="Programiz: Learn to Code for Free"><i class="list-icon"><img src="img/programiz.png" alt="programiz-logo"></i>Programiz</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Question</h4>
-    </li>
-    <li><a href="https://www.codewars.com/" title="Achieve mastery through challenge"><i class="list-icon"><img src="img/codewars.png" alt="codewars-logo"></i>Codewars</a></li>
-    <li><a href="https://exercism.io/" title="Code Practice and Mentorship for Everyone"><i class="list-icon"><img src="img/exercism.png" alt="exercism-logo"></i>Exercism</a></li>
-    <li><a href="https://www.codingame.com/" title="STEP UP YOUR CODING GAME"><i class="list-icon"><img src="img/codingame.png" alt="Codingame-logo"></i>Codingame</a></li>
-    <li><a href="https://edabit.com/" title="Code Languages Questions"><i class="list-icon"><img src="img/edabit.png" alt="edabit-logo"></i>Edabit</a></li>
-    <li><a href="https://projecteuler.net/" title="Project Euler is a series of challenging mathematical/computer programming problems"><i class="list-icon"><img src="img/projecteuler.png" alt="projecteuler-logo"></i>Project Euler</a></li>
-    <li><a href="https://leetcode.com/" title="LeetCode - The World's Leading Online Programming Learning Platform"><i class="list-icon"><img src="img/leetcode.png" alt="leetcode-logo"></i>Leetcode</a></li>
-  </ul>
-</div>
-<div class="middle-list">
-  <h2><a name="more">More</a></h2>
-  <ul class="web-map">
-    <li>
-      <h4>Community</h4>
-    </li>
-    <li><a href="https://www.github.com/" title="The World Biggest Open Sources Share Website"><i class="list-icon"><img src="img/github.png" alt="github-logo"></i>Github</a></li>
-    <li><a href="https://www.gitlab.com/" title="Gitlab"><i class="list-icon"><img src="img/gitlab.png" alt="gitlab-logo"></i>Gitlab</a></li>
-    <li><a href="https://stackoverflow.com/questions" title="Newest Questions - Stack Overflow"><i class="list-icon"><img src="img/stockoverflow.png" alt="stackoverflow-logo"></i>Stackoverflow</a></li>
-    <li><a href="https://www.csdn.net/" title="中国最大的IT社区和服务平台"><i class="list-icon"><img src="img/csdn.png" alt="csdn-logo"></i>CSDN</a></li>
-    <li><a href="https://segmentfault.com/" title="一个专注于解决编程问题，提高开发技能的社区"><i class="list-icon"><img src="img/segmentfault.png" alt="segmentfault-logo"></i>SegmentFault思否</a></li>
-    <li><a href="https://www.v2ex.com" title="创意工作者的社区。讨论编程、设计、硬件、游戏等令人激动的话题"><i class="list-icon"><img src="img/v2ex.png" alt="v2ex-logo"></i>V2ex</a></li>
-    <li><a href="https://www.w3ctech.com/" title="中国最大的前端技术社区"><i class="list-icon"><img src="img/w3ctech.png" alt="w3ctech-logo"></i>W3ctech</a></li>
-    <li><a href="https://www.cnblogs.com/" title="博客模式的技术分享社区"><i class="list-icon"><img src="img/cnblogs.png" alt="cnblogs-logo"></i>博客园</a></li>
-    <li><a href="https://www.gitee.com/" title="中国版Github"><i class="list-icon"><img src="img/gitee.png" alt="gitee-logo"></i>码云</a></li>
-    <li><a href="https://juejin.im/" title="前端技术大牛汇聚之地"><i class="list-icon"><img src="img/juejin.png" alt="juejin-logo"></i>掘金</a></li>
-    <li><a href="https://www.oschina.net/" title="目前中国最大的开源技术社区"><i class="list-icon"><img src="img/oschina.png" alt="oschina-logo"></i>开源中国</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Education</h4>
-    </li>
-    <li><a href="https://www.tutorialspoint.com/" title="You are browsing the best resource for Online Education">Tutorialpoint</a></li>
-    <li><a href="https://code.org/" title="Learn today, build a brighter tomorrow">Code</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Markdown</h4>
-    </li>
-    <li><a href="https://www.markdownguide.org/" title="Markdown Guide">Markdownguide</a></li>
-    <li><a href="https://www.markdowntutorial.com/" title="Markdown Tutorial">Markdowntutorial</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>RegExp</h4>
-    </li>
-    <li><a href="https://regexr.com/" title="RegExr: Learn, Build, & Test RegEx">Regexr</a></li>
-    <li><a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Regular_Expressions" title="MDN Web Docs">MDN</a></li>
-    <li><a href="https://regex101.com/" title="Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript">regex101</a></li>
-    <li><a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp" title="W3Schools Online Web Tutorials">w3school</a></li>
-  </ul>
-  <ul class="web-map">
-    <li>
-      <h4>Videolearn</h4>
-    </li>
-    <li><a href="https://www.imooc.com/" title="程序员的梦工厂">慕课网</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-    <li><a href="https://www.w3schools.com/" title="W3Schools Online Web Tutorials">W3schools</a></li>
-  </ul>
-</div>
-<div class="return-top-button">
-  <ul>
-    <li><i class="list-icon"><img src="img/rocket.png" alt="rocket-logo"></i></li>
-    <li><i class="list-icon"><img src="img/qrcode.png" alt="qrcode-logo"></i></li>
-    <li><a href="https://github.com/zhangboheng/The-Code-Map/" title="Give Me A Star Please~~"><i class="list-icon"><img src="img/github.png" alt="github-logo"></i></a></li>
-    <div class="show-code">
-      <ul>
-        <li><i class="list-icon"><img src="img/wechat.png" title="Buy me a cup of coffee" alt="wechat-logo"></i>
-          <div class="intro_wechat"></div>
-        </li>
-        <li><i class="list-icon"><img src="img/alipay.png" title="Buy me a cup of coffee" alt="alipay-logo"></i>
-          <div class="intro_alipay"></div>
-        </li>
-        <li><a href="https://www.paypal.com/paypalme/zhangboheng" title="Buy me a cup of coffee"><i class="list-icon"><img src="img/paypal.png" alt="paypal-logo"></i></a></li>
-      </ul>
+  <div class="app-container">
+    <!-- Sidebar Overlay (Mobile) -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    
+    <!-- Sidebar Toggle Bar (External) -->
+    <div class="sidebar-toggle-bar" id="sidebarToggleBar">
+      <button class="sidebar-toggle-btn" id="sidebarToggle" title="收起/展开侧边栏">
+        ◀
+      </button>
     </div>
-  </ul>
-</div>
-<div class="useful-links">
-  <p>Copyright 2020-2021 行运设计师 Luckydesigner.space All Rights Reserved</p>
-</div>
-<script src="js/matrix.js"></script> 
-<script src="js/Javascript.js"></script>
+    
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">🔗</div>
+          <span class="logo-text">Code Map</span>
+        </div>
+      </div>
+      
+      <nav class="sidebar-nav" id="sidebarNav">
+        <!-- Categories will be rendered by JavaScript -->
+      </nav>
+      
+      <div class="sidebar-footer">
+        <div class="copyright">
+          <span>Design by 行运设计师</span>
+          <a href="https://github.com/zhangboheng" target="_blank">© 2026 zhangboheng</a>
+        </div>
+      </div>
+    </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="content-header">
+        <div class="content-title">
+          <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+          <h1 id="currentCategory">全部资源</h1>
+          <span class="content-count" id="linkCount">0 个链接</span>
+        </div>
+        <div class="header-actions">
+          <div class="search-box-header">
+            <input type="text" id="searchInput" placeholder="🔍 Search resources...">
+          </div>
+          <div class="language-switcher" id="languageSwitcher">
+            <button class="lang-dropdown-btn" id="langDropdownBtn">
+              <span class="lang-icon">🌐</span>
+              <span class="lang-text" id="langDropdownText">Language</span>
+              <span class="lang-arrow">▼</span>
+            </button>
+            <div class="lang-dropdown-menu" id="langDropdownMenu">
+              <button class="lang-option active" data-lang="en">
+                <span class="lang-icon">🇺🇸</span>
+                <span class="lang-text">English</span>
+              </button>
+              <button class="lang-option" data-lang="zh">
+                <span class="lang-icon">🇨🇳</span>
+                <span class="lang-text">中文</span>
+              </button>
+              <button class="lang-option" data-lang="ja">
+                <span class="lang-icon">🇯🇵</span>
+                <span class="lang-text">日本語</span>
+              </button>
+              <button class="lang-option" data-lang="ko">
+                <span class="lang-icon">🇰🇷</span>
+                <span class="lang-text">한국어</span>
+              </button>
+              <button class="lang-option" data-lang="es">
+                <span class="lang-icon">🇪🇸</span>
+                <span class="lang-text">Español</span>
+              </button>
+              <button class="lang-option" data-lang="fr">
+                <span class="lang-icon">🇫🇷</span>
+                <span class="lang-text">Français</span>
+              </button>
+            </div>
+          </div>
+          <button class="theme-toggle" id="themeToggle">
+            <span id="themeIcon">🌙</span>
+            <span id="themeText">Dark Mode</span>
+          </button>
+        </div>
+      </header>
+      
+      <div class="content-body">
+        <div class="content-grid" id="contentGrid">
+          <!-- Links will be rendered by JavaScript -->
+        </div>
+      </div>
+    </main>
+    
+  </div>
+  
+  <!-- Return to Top Button -->
+  <button class="return-top" id="returnTop" title="返回顶部">↑</button>
+  
+  <!-- Custom Link Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="customLinkModal">
+      <div class="modal-header">
+        <h3 id="modalTitle">添加自定义链接</h3>
+        <button class="modal-close" id="modalClose" title="关闭">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="linkName">名称 <span class="required">*</span></label>
+          <input type="text" id="linkName" placeholder="例如：GitHub" maxlength="50">
+        </div>
+        <div class="form-group">
+          <label for="linkUrl">链接 <span class="required">*</span></label>
+          <input type="url" id="linkUrl" placeholder="https://example.com">
+        </div>
+        <div class="form-group">
+          <label for="linkIcon">图标</label>
+          <input type="text" id="linkIcon" placeholder="🔗 或留空使用默认图标" maxlength="10">
+        </div>
+        <div class="form-group">
+          <label for="linkNote">备注</label>
+          <textarea id="linkNote" placeholder="可选备注信息" maxlength="200" rows="2"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modalCancel">取消</button>
+        <button class="btn btn-primary" id="modalSave">保存</button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Export/Import Modal -->
+  <div class="modal-overlay" id="exportImportOverlay">
+    <div class="modal modal-sm" id="exportImportModal">
+      <div class="modal-header">
+        <h3 id="exportImportTitle">导出/导入链接</h3>
+        <button class="modal-close" id="exportImportClose" title="关闭">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="export-import-actions">
+          <button class="btn btn-primary" id="exportBtn">📤 导出链接</button>
+          <button class="btn btn-secondary" id="importBtn">📥 导入链接</button>
+          <input type="file" id="importFile" accept=".json" style="display: none;">
+        </div>
+        <div class="export-import-info" id="exportImportInfo"></div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
